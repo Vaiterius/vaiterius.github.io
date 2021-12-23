@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>My Contact Info</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- https://getbootstrap.com/docs/5.0/ -->
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+              crossorigin="anonymous">
+
+        <!-- Separate Popper and Boostrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+                integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+                integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+                crossorigin="anonymous"></script>
+
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- The navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="navbar-nav">
+                    <a class="navbar-brand">Gerard Gandionco</a>
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="about.html">About Me</a>
+                    <a class="nav-link" href="experience.html">Experience</a>
+                    <a class="nav-link active" href="contact.html" aria-current="page">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Rows of links to my medias and other relevant stuff -->
+        <div class="container pt-4">
+            <div class="row email">
+                <h4>email me at:</h3>
+                <p>
+                    <a href="mailto:gerard.gandionco@gmail.com">gerard.gandionco@gmail.com</a>
+                </p>
+            </div>
+            <div class="row links-header">
+                <h4>or check out my other links:</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm"></div>
+                <div class="col-sm">
+                    <ul id="contacts-links" class="list-group list-group-flush">
+                        <a href="https://github.com/Vaiterius" class="list-group-item list-group-item-action">Github</a>
+                        <a href="https://www.linkedin.com/in/gerard-gandionco-398697204/" class="list-group-item list-group-item-action">LinkedIn</a>
+                        <a href="https://leetcode.com/Vaiterius/" class="list-group-item list-group-item-action">Leetcode</a>
+                        <a href="https://discordapp.com/users/354783154126716938/" class="list-group-item list-group-item-action">Discord</a>
+                        <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">Facebook</a>
+                        <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">Twitter</a>
+                        <a href="#" class="list-group-item list-group-item-action disabled" aria-disabled="true">Instagram</a>
+                    </ul>
+                </div>
+                <div class="col-sm"></div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
