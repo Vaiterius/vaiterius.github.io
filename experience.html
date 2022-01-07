@@ -29,14 +29,35 @@
 
     <body>
         <!-- The navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <div class="navbar-nav">
-                    <a class="navbar-brand">Gerard Gandionco</a>
-                    <a class="nav-link" href="index.html">Home</a>
-                    <a class="nav-link" href="about.html">About Me</a>
-                    <a class="nav-link active" href="experience.html" aria-current="page">Experience</a>
-                    <a class="nav-link" href="contact.html">Contact</a>
+        <nav class="navbar navbar-expand-md navbar-light bg-light py-2">
+            <div class="container">
+
+                <a class="navbar-brand">Gerard Gandionco</a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navmenu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button> <!-- Collapse to a hamburger menu -->
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="experience.html" class="nav-link">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -171,7 +192,7 @@
                                     <p class="card-text">
                                         Utilizes the libtcod library for Python3. In this ASCII roguelike, you play as a
                                         hero delving in and out of monster-filled dungeon floors as you complete quests
-                                        and upgrade yo
+                                        and upgrade your character.
                                     </p>
                                     <a href="#" class="card-link disabled" aria-disabled="true">Coming soon!</a>
                                 </div>

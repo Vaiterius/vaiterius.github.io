@@ -30,21 +30,42 @@
 
     <body>
         <!-- The navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <div class="navbar-nav">
-                    <a class="navbar-brand">Gerard Gandionco</a>
-                    <a class="nav-link" href="index.html">Home</a>
-                    <a class="nav-link active" href="about.html" aria-current="page">About Me</a>
-                    <a class="nav-link" href="experience.html">Experience</a>
-                    <a class="nav-link" href="contact.html">Contact</a>
+        <nav class="navbar navbar-expand-md navbar-light bg-light py-2">
+            <div class="container">
+
+                <a class="navbar-brand">Gerard Gandionco</a>
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navmenu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button> <!-- Collapse to a hamburger menu -->
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="experience.html" class="nav-link">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- Side picture of me and description about me next to it -->
+        <!-- Side picture of me and description about me next to it
         <div class="container about-me">
-            <img src="images/Kim Jong-Un vertical.jpg" class="image-portrait" alt="Vertical portrait shot of me">
+            <img src="images/Kim Jong-Un vertical.jpg" class="img-fluid w-50 d-none d-sm-block" alt="Vertical portrait shot of me">
             <div class="desc">
                 <h2 id="about-me-header"></h2>
                 <p>
@@ -73,7 +94,43 @@
                     videogames, jam on my guitars, or do a little archery on the weekends.
                 </p>
             </div>
+        </div> -->
+
+        <!-- Side picture of me and description about me next to it -->
+        <div class="container about-me">
+            <div class="d-md-flex flex-md-column flex-lg-row align-items-center">
+                <img src="images/Kim Jong-Un vertical.jpg" class="img w-50 d-sm-block" alt="Vertical portrait shot of me">
+                <div class="desc">
+                    <h2 id="about-me-header"></h2>
+                    <p>
+                        Hi, my name is Gerard. I'm 19 and I'm a passionate learner and computer science student currently
+                        studying at College of the Canyons. I aim to complete my associate's degree here and transfer out
+                        to a university and obtain my bachelor's of science degree all while trying to score a couple
+                        junior dev internship positions.
+                    </p>
+                    <p>
+                        In school, I didn't even know what I wanted to be, that is, until I one day tried out
+                        programming out of curiosity in the middle of the coronavirus pandemic. I started out with
+                        Python and I quickly grew invested with coding, creating tons of projects, and eventually
+                        I thought - this is what I want to do! I am especially considerate about writing clean,
+                        readable, and efficient code, among other things I strive upon as an aspiring software
+                        engineer.
+                    </p>
+                    <p>
+                        You can look into more detail about my programming experience in the experiences section of this
+                        website, but mainly I am more interested in working with algorithms and data structures than
+                        anything else. I have also dabbled with game development concepts and website development.
+                    </p>
+                    <p>
+                        I have many interests and my personal life is fulfilled with many hobbies that I enjoy doing.
+                        In my free time, I like to work on programming projects (such as this website! although this
+                        is for CS50x problem set 8), play various
+                        videogames, jam on my guitars, or do a little archery on the weekends.
+                    </p>
+                </div>
+            </div>
         </div>
+
     </body>
 
 </html>
