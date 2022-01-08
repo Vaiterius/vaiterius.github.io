@@ -2,47 +2,38 @@
 
 <html lang="en">
 
-    <head>
-        <title>My Experience</title>
+<head>
+    <title>My Experience</title>
 
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- https://getbootstrap.com/docs/5.0/ -->
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-              rel="stylesheet"
-              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-              crossorigin="anonymous">
+    <!-- https://getbootstrap.com/docs/5.0/ -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-        <!-- Separate Popper and Boostrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-                integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-                crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-                integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-                crossorigin="anonymous"></script>
+    <!-- Separate Popper and Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 
-        <link href="styles.css" rel="stylesheet">
-    </head>
+    <link href="styles.css" rel="stylesheet">
+</head>
 
-    <body>
+<body>
+    <header>
         <!-- The navbar -->
         <nav class="navbar navbar-expand-md navbar-light bg-light py-2">
             <div class="container">
-
                 <a class="navbar-brand">Gerard Gandionco</a>
-
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navmenu"
-                >
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                     <span class="navbar-toggler-icon"></span>
                 </button> <!-- Collapse to a hamburger menu -->
-
                 <div class="collapse navbar-collapse" id="navmenu">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -61,29 +52,27 @@
                 </div>
             </div>
         </nav>
+    </header>
 
+    <main>
         <div class="container pt-2">
-
             <!-- Education and Work Experience row -->
-            <div class="education-and-work row">
+            <section class="education-and-work row">
                 <div class="col"></div>
-
                 <div class="col col-10 border border-2 rounded-3">
                     <h5 class="titles">Education & Work Experience</h5>
                     <h6 class="text-muted">Education</h6>
                     <p><i>Golden Valley High School</i> (2017-2020) - High School Diploma</p>
-                    <p><i>College of the Canyons</i> (2020-2022) - Associate's Degree of Science for Transfer, Computer Science</p>
+                    <p><i>College of the Canyons</i> (2020-2022) - Associate's Degree of Science for Transfer, Computer
+                        Science</p>
                     <h6 class="text-muted">Work Experience</h6>
                     <p><i>N/A</i></p>
                 </div>
-
                 <div class="col"></div>
-            </div>
-
+            </section>
             <!-- Languages and Skills row -->
-            <div class="langs-and-skills row">
+            <section class="langs-and-skills row">
                 <div class="col"></div>
-
                 <!-- A list of the languages I have worked with -->
                 <div class="col col-5 border border-2 rounded-3">
                     <h5 class="titles">Languages & Skills</h5>
@@ -106,9 +95,7 @@
                         <li>MongoDB (PyMongo)</li>
                     </ul>
                 </div>
-
                 <div class="col"></div>
-
                 <!-- Other useful and relevant experience -->
                 <div class="col col-5 border border-2 rounded-3">
                     <h5 class="titles">Skills Elaborated</h5>
@@ -135,57 +122,58 @@
                         </li>
                     </ul>
                 </div>
-
                 <div class="col"></div>
-            </div>
-
+            </section>
             <!-- Here I will showcase any notable projects I have worked on -->
-            <div class="projects row">
+            <section class="projects row">
                 <div class="col"></div>
-
                 <div class="col col-10 border border-2 rounded-3">
                     <h5 class="projects-title">Notable Projects</h5>
                     <div class="row">
-
                         <!-- Into the Lair RPG -->
                         <div class="projects-subtitle col">
                             <div class="card card-size">
-                                <img src="images/Into The Lair title.png" class="card-img-top" alt="Title screen of my RPG">
+                                <img src="images/Into The Lair title.png" class="card-img-top"
+                                    alt="Title screen of my RPG">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Into the Lair</b></h5>
                                     <h6 class="card-subtitle mb-2 text-muted">Text-based, interactive fiction</h6>
                                     <p class="card-text">
-                                        Made with the standard Python library solely off the terminal. Features an inventory
+                                        Made with the standard Python library solely off the terminal. Features an
+                                        inventory
                                         system, enemy encounters, NPC dialogue, a storyline, and more.
                                     </p>
-                                    <a href="https://github.com/Vaiterius/Into-The-Lair-RPG" class="card-link">Github</a>
+                                    <a href="https://github.com/Vaiterius/Into-The-Lair-RPG"
+                                        class="card-link">Github</a>
                                     <a href="https://vaiterius.itch.io/into-the-lair" class="card-link">Itch.io</a>
                                 </div>
                             </div>
                         </div>
-
                         <!-- Discord Bot -->
                         <div class="col projects-subtitle">
                             <div class="card card-size">
-                                <img src="images/Discord logo.png" class="card-img-top img-sizes" alt="The Discord logo">
+                                <img src="images/Discord logo.png" class="card-img-top img-sizes"
+                                    alt="The Discord logo">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Personal Discord bot</b></h5>
                                     <h6 class="card-subtitle mb-2 text-muted">Experimental and general-purpose</h6>
                                     <p class="card-text">
-                                        Responsive to live chat, saves server data into MongoDB, allows users to translate
-                                        languages with Google's Cloud Translation API, pulls xkcd comics from the API, and
+                                        Responsive to live chat, saves server data into MongoDB, allows users to
+                                        translate
+                                        languages with Google's Cloud Translation API, pulls xkcd comics from the API,
+                                        and
                                         serves moderation commands, and hosted on the Heroku platform.
                                     </p>
                                     <a href="https://discord.com/api/oauth2/authorize?client_id=811794189863485441&permissions=8&scope=bot"
-                                       class="card-link">Invite</a>
+                                        class="card-link">Invite</a>
                                 </div>
                             </div>
                         </div>
-
                         <!-- Untitled Roguelike -->
                         <div class="col projects-subtitle">
                             <div class="card card-size">
-                                <img src="images/My roguelike.png" class="card-img-top img-sizes" alt="Snapshot of a dungeon floor">
+                                <img src="images/My roguelike.png" class="card-img-top img-sizes"
+                                    alt="Snapshot of a dungeon floor">
                                 <div class="card-body">
                                     <h5 class="title"><b>Untitled Roguelike</b></h5>
                                     <h6 class="card-subtitle mb-2 text-muted">Roguelike dungeoncrawler</h6>
@@ -198,14 +186,12 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
                 <div class="col"></div>
-            </div>
-
+            </section>
         </div>
-    </body>
+    </main>
+</body>
 
 </html>
