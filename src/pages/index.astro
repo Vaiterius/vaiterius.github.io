@@ -1,9 +1,46 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Button from "../components/Button";
+import Button from "../components/Button.jsx";
 ---
 
-<Layout title="Portfolio" header="Welcome to my portfolio!">
-    <p>Hello, world!</p>
-    <Button />
+<Layout title="Home | Gerard Gandionco">
+    <div class="flex flex-row justify-evenly content-center space-x-4">
+        <div class="flex justify-center basis-1/2 ml-4">
+            <img class="w-96 rounded-lg" src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&q=80&w=1287&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Picture of me">
+        </div>
+        <div class="flex flex-col justify-center basis-1/2 space-y-6 mr-4">
+            <div>
+                <p class="greet">Hey, my name is...</p>
+                <h1 class="text-4xl">Gerard Gandionco</h1>
+            </div>
+            <hr class="w-10">
+            <p>
+                I’m a <span class="dev-type">full-stack developer</span> with
+                a focus on <span class="dev-type">back-end</span> development.
+                I am passionate about creating interesting projects in my free
+                time using <span class="lang">Python</span> and an array of other languages.
+            </p>
+            <div class="space-x-4">
+                <Button className="btn btn-neutral" text="Get in touch"/>
+                <Button className="btn" text="My resume"/>
+            </div>
+        </div>
+    </div>
 </Layout>
+
+<style>
+    h1 {
+        font-family: "Roboto Mono";
+        font-weight: bold;
+    }
+    .dev-type {
+        color: #828DF8;
+    }
+    .lang {
+        color: #F471B5;
+    }
+    .greet {
+        color: #3ABFF8;
+        font-weight:lighter;
+    }
+</style>

@@ -1,5 +1,12 @@
 ---
-const { title, header } = Astro.props;
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
+
+import "@fontsource/roboto-mono";
+import "@fontsource/roboto-mono/700.css";  // Bold.
+import "@fontsource/roboto-mono/500.css";  // Medium.
+
+const { title } = Astro.props;
 ---
 
 <html lang="en">
@@ -10,17 +17,16 @@ const { title, header } = Astro.props;
         <title>{title}</title>
     </head>
     <body>
-        <nav>
-            <a href="/">Home</a>
-            <a href="#">About Me</a>
-            <a href="#">Projects</a>
-            <a href="/blog/blog-example">Blog</a>
-            <a href="#">Contact</a>
-        </nav>
-        <h1>{header}</h1>
-        <article>
+        <Header navStyle="mx-6"/>
+        <main>
             <slot />  <!-- Is replaced for main page content. -->
-        </article>
-        <footer>Some footer</footer>
+        </main>
+        <Footer />
     </body>
 </html>
+
+<style>
+    html {
+        font-family: "Roboto Mono";
+    }
+</style>

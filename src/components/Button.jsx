@@ -1,8 +1,6 @@
-const Button = () => {
+const Button = ({ text, className }) => {
     return (
-        <div>
-            <input type="button" value="I am a button!" />
-        </div>
+        <button className={className}>{text}</button>
     )
 };
 
