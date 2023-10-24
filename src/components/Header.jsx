@@ -1,12 +1,12 @@
-const Header = ({ navStyle }) => {
+const Header = ({ navItemStyle }) => {
     return (
         <header>
-            <nav className="navbar flex flex-row flex-grow justify-end">
-                <a className={navStyle} href="/">Home</a>
-                <a className={navStyle} href="#">About Me</a>
-                <a className={navStyle} href="#">Projects</a>
-                <a className={navStyle} href="/blog/blog-example">Blog</a>
-                <a className={navStyle} href="#">Contact</a>
+            <nav className="navbar fixed top-0 flex flex-row flex-grow justify-end">
+                <div className={navItemStyle}><a href="#intro">Home</a></div>
+                <div className={navItemStyle}><a href="#about-me">About Me</a></div>
+                <div className={navItemStyle}><a href="#projects">Projects</a></div>
+                <div className={navItemStyle}><a href="/blog">Blog</a></div>
+                <div className={navItemStyle}><a href="#contact">Contact</a></div>
             </nav>
         </header>
     );
