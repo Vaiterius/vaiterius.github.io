@@ -20,13 +20,15 @@ import Button from "../components/Button.jsx";
             </p>
             <div class="flex flex-row space-x-4">
                 <Button className="flex-none btn btn-neutral w-1/4 mr-4 drop-shadow-lg" text="Get in touch"/>
-                <Button className="flex-none btn w-1/4 mr-4 drop-shadow-lg" text="My resume"/>
+                <a href="/portfolio_resume.pdf">
+                    <Button className="flex-none btn w-1/4 mr-4 drop-shadow-lg" text="My resume"/>
+                </a>
             </div>
         </div>
     </section>
 
     <!-- About Me -->
-    <section id="about-me" class="flex flex-column my-56">
+    <section id="background" class="flex flex-column my-56">
         <div class="basis-1/2 mx-12">
             <h2 class="text-4xl text-white text-center">Who am I?</h2>
             <p>
@@ -44,14 +46,32 @@ import Button from "../components/Button.jsx";
         </div>
     </section>
 
+    <!-- TODO refactor elements to source from content -->
     <!-- Projects -->
-    <section>
-
+    <section id="projects">
+        <article>
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sint beatae nostrum placeat aliquam odit ratione earum, assumenda magni dolor ipsum laborum dolorem! Itaque corporis doloremque optio corrupti hic. Asperiores?</p>
+        </article>
+        <article>
+            <h3>Project 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sint beatae nostrum placeat aliquam odit ratione earum, assumenda magni dolor ipsum laborum dolorem! Itaque corporis doloremque optio corrupti hic. Asperiores?</p>
+        </article>
+        <article>
+            <h3>Project 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sint beatae nostrum placeat aliquam odit ratione earum, assumenda magni dolor ipsum laborum dolorem! Itaque corporis doloremque optio corrupti hic. Asperiores?</p>
+        </article>
     </section>
 
     <!-- Contact -->
-    <section>
+    <section id="contact">
+        <div>
+            <h3>Contact me!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse atque pariatur dolor odit, quae reiciendis eum corrupti obcaecati rerum saepe facere cum blanditiis quisquam doloremque quasi autem quas iste unde.</p>
+        </div>
+        <form action="" method="post">
 
+        </form>
     </section>
 </Layout>
 
