@@ -1,34 +1,42 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.jsx";
+import HorizontalRule from "../components/HorizontalRule";
 import Project from "../components/Project.jsx";
 ---
 
 <Layout title="Home | Gerard Gandionco">
-	<div class="text-center sm:text-left md:container mx-auto px-6 sm:px-16">
+	<!-- Construction sign -->
+	<div class="bg-warning text-center py-2 sm:container">
+		<p class="text-warning-content font-bold">🚧 Site under construction!</p>
+	</div>
+	<div class="md:container text-center md:text-left mx-auto px-6 sm:px-16">
 		<!-- Introduction -->
-		<section id="intro" class="my-12">
+		<section id="intro" class="flex flex-col justify-center h-screen mb-12">
 			<div>
 				<div>
-					<p>Hey, my name is...</p>
+					<p class="text-primary">Hey, my name is...</p>
 					<h1 class="text-6xl font-bold">Gerard Gandionco</h1>
 				</div>
-				<hr class="my-4" />
+				<HorizontalRule />
 				<p>
-					I'm a <span>full-stack developer</span> with a focus on <span>back-end</span>
+					I'm a <span class="text-primary font-bold">full-stack developer</span> with a
+					focus on <span class="text-primary font-bold">back-end</span>
 					 development. I am passionate about creating interesting projects in my free
-					time using <span>Python</span> and an array of other languages.
+					time using <span class="text-accent font-bold">Python</span> and an array of
+					other languages.
 				</p>
-				<div class="my-4">
-					<Button url="#" className="btn btn-neutral" text="Get in touch" />
+				<div class="my-4 space-x-4">
+					<Button url="#contact" className="btn btn-neutral" text="Get in touch" />
 					<Button url="/portfolio_resume.pdf" className="btn" text="My resume" />
 				</div>
 			</div>
 		</section>
 		<!-- Background -->
-		<section id="background" class="my-12">
+		<section id="background" class="flex flex-col justify-center h-screen mb-12">
 			<div>
-				<h2>Who am I?</h2>
+				<h2 class="text-4xl font-bold">Who am I?</h2>
+				<HorizontalRule />
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolores, quia
 					nostrum accusamus excepturi atque, deleniti eius inventore qui ex adipisci
@@ -45,22 +53,56 @@ import Project from "../components/Project.jsx";
 		</section>
 		<!-- TODO refactor elements to source from content -->
 		<!-- Projects -->
-		<section id="projects" class="my-12">
-			<Project
-				title="Project 1"
-				tools={["Tool 1", "Tool 2", "Tool 3"]}
-				description="lorem ipsum dolor sit amet"
-				imageUrl="#"
-				imageAlt="TODO image"
-				sourceUrl="#"
-				demoUrl="#"
-			/>
+		<section id="projects" class="mb-12">
+			<div>
+				<h2 class="text-4xl font-bold">My Projects</h2>
+				<HorizontalRule />
+				<div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4">
+					<Project
+						title="Project 1"
+						tools={["Tool 1", "Tool 2", "Tool 3"]}
+						description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium qui animi recusandae sed saepe velit aspernatur rem consequatur!"
+						imageUrl="#"
+						imageAlt="TODO image"
+						sourceUrl="#"
+						demoUrl="#"
+					/>
+					<Project
+						title="Project 2"
+						tools={["Tool 1", "Tool 2", "Tool 3"]}
+						description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium qui animi recusandae sed saepe velit aspernatur rem consequatur!"
+						imageUrl="#"
+						imageAlt="TODO image"
+						sourceUrl="#"
+						demoUrl="#"
+					/>
+					<Project
+						title="Project 3"
+						tools={["Tool 1", "Tool 2", "Tool 3"]}
+						description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium qui animi recusandae sed saepe velit aspernatur rem consequatur!"
+						imageUrl="#"
+						imageAlt="TODO image"
+						sourceUrl="#"
+						demoUrl="#"
+					/>
+					<Project
+						title="Project 4"
+						tools={["Tool 1", "Tool 2", "Tool 3"]}
+						description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium qui animi recusandae sed saepe velit aspernatur rem consequatur!"
+						imageUrl="#"
+						imageAlt="TODO image"
+						sourceUrl="#"
+						demoUrl="#"
+					/>
+				</div>
+			</div>
 		</section>
 		<!-- Contact -->
-		<section id="contact" class="my-12">
+		<section id="contact" class="flex flex-col justify-center h-screen mb-12">
 			<div>
-				<h3>Contact me!</h3>
-				<p>
+				<h2 class="text-4xl font-bold">Contact me!</h2>
+				<HorizontalRule />
+				<p class="my-4">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse atque pariatur
 					dolor odit, quae reiciendis eum corrupti obcaecati rerum saepe facere cum
 					blanditiis quisquam doloremque quasi autem quas iste unde.
@@ -69,3 +111,5 @@ import Project from "../components/Project.jsx";
 		</section>
 	</div>
 </Layout>
+
+<style></style>

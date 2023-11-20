@@ -23,7 +23,7 @@ const { title } = Astro.props;
 			<!-- Is replaced for main page content. -->
 			<slot />
 		</main>
-		<Footer />
+		<Footer year={new Date().getFullYear()} />
 	</body>
 </html>
 

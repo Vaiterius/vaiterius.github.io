@@ -1,10 +1,8 @@
-const year = new Date().getFullYear();
-
-const Footer = () => {
+const Footer = ({ year }) => {
 	return (
-		<footer className="footer footer-center p-4 bg-base-300 text-base-content">
+		<footer className="footer footer-center bg-base-300">
 			<aside>
-				<p className="my-6">&copy; {year} Gerard Gandionco - All rights reserved.</p>
+				<p className="my-12">&copy; {year} Gerard Gandionco - All rights reserved.</p>
 			</aside>
 		</footer>
 	);
