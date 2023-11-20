@@ -1,100 +1,71 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.jsx";
+import Project from "../components/Project.jsx";
 ---
 
 <Layout title="Home | Gerard Gandionco">
-    <!-- Introduction -->
-    <section id="intro" class="flex mx-32">
-        <div class="flex flex-col w-1/2 space-y-6 mr-4 my-56">
-            <div>
-                <p class="greet">Hey, my name is...</p>
-                <h1 class="text-6xl text-white p-0 m-0">Gerard Gandionco</h1>
-            </div>
-            <hr class="name-break w-16">
-            <p class="w-2/3">
-                I’m a <span class="dev-type">full-stack developer</span> with
-                a focus on <span class="dev-type">back-end</span> development.
-                I am passionate about creating interesting projects in my free
-                time using <span class="lang">Python</span> and an array of other languages.
-            </p>
-            <div class="flex flex-row space-x-4">
-                <Button className="flex-none btn btn-neutral w-1/4 mr-4 drop-shadow-lg" text="Get in touch"/>
-                <a href="/portfolio_resume.pdf">
-                    <Button className="flex-none btn w-1/4 mr-4 drop-shadow-lg" text="My resume"/>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Me -->
-    <section id="background" class="flex flex-column my-56">
-        <div class="basis-1/2 mx-12">
-            <h2 class="text-4xl text-white text-center">Who am I?</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-                dolores, quia nostrum accusamus excepturi atque, deleniti eius
-                inventore qui ex adipisci aliquam blanditiis beatae at molestiae
-                earum quasi sed explicabo.
-            </p>
-        </div>
-        <div class="basis-1/2 mx-12">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste modi
-            similique saepe ullam praesentium, nam sequi! Ex alias mollitia
-            consequatur totam nihil quidem nostrum tempore at, tempora, modi
-            libero saepe!
-        </div>
-    </section>
-
-    <!-- TODO refactor elements to source from content -->
-    <!-- Projects -->
-    <section id="projects">
-        <article>
-            <h3>Project 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sint beatae nostrum placeat aliquam odit ratione earum, assumenda magni dolor ipsum laborum dolorem! Itaque corporis doloremque optio corrupti hic. Asperiores?</p>
-        </article>
-        <article>
-            <h3>Project 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sint beatae nostrum placeat aliquam odit ratione earum, assumenda magni dolor ipsum laborum dolorem! Itaque corporis doloremque optio corrupti hic. Asperiores?</p>
-        </article>
-        <article>
-            <h3>Project 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sint beatae nostrum placeat aliquam odit ratione earum, assumenda magni dolor ipsum laborum dolorem! Itaque corporis doloremque optio corrupti hic. Asperiores?</p>
-        </article>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <div>
-            <h3>Contact me!</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse atque pariatur dolor odit, quae reiciendis eum corrupti obcaecati rerum saepe facere cum blanditiis quisquam doloremque quasi autem quas iste unde.</p>
-        </div>
-        <form action="" method="post">
-
-        </form>
-    </section>
+	<div class="text-center sm:text-left md:container mx-auto px-6 sm:px-16">
+		<!-- Introduction -->
+		<section id="intro" class="my-12">
+			<div>
+				<div>
+					<p>Hey, my name is...</p>
+					<h1 class="text-6xl font-bold">Gerard Gandionco</h1>
+				</div>
+				<hr class="my-4" />
+				<p>
+					I'm a <span>full-stack developer</span> with a focus on <span>back-end</span>
+					 development. I am passionate about creating interesting projects in my free
+					time using <span>Python</span> and an array of other languages.
+				</p>
+				<div class="my-4">
+					<Button url="#" className="btn btn-neutral" text="Get in touch" />
+					<Button url="/portfolio_resume.pdf" className="btn" text="My resume" />
+				</div>
+			</div>
+		</section>
+		<!-- Background -->
+		<section id="background" class="my-12">
+			<div>
+				<h2>Who am I?</h2>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolores, quia
+					nostrum accusamus excepturi atque, deleniti eius inventore qui ex adipisci
+					aliquam blanditiis beatae at molestiae earum quasi sed explicabo.
+				</p>
+			</div>
+			<div>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium qui animi
+					recusandae sed saepe velit aspernatur rem consequatur! Velit asperiores magnam
+					voluptatum atque eum modi qui ducimus beatae dolores facilis!
+				</p>
+			</div>
+		</section>
+		<!-- TODO refactor elements to source from content -->
+		<!-- Projects -->
+		<section id="projects" class="my-12">
+			<Project
+				title="Project 1"
+				tools={["Tool 1", "Tool 2", "Tool 3"]}
+				description="lorem ipsum dolor sit amet"
+				imageUrl="#"
+				imageAlt="TODO image"
+				sourceUrl="#"
+				demoUrl="#"
+			/>
+		</section>
+		<!-- Contact -->
+		<section id="contact" class="my-12">
+			<div>
+				<h3>Contact me!</h3>
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse atque pariatur
+					dolor odit, quae reiciendis eum corrupti obcaecati rerum saepe facere cum
+					blanditiis quisquam doloremque quasi autem quas iste unde.
+				</p>
+			</div>
+		</section>
+	</div>
 </Layout>
-
-<style>
-    h1 {
-        font-family: "Roboto Mono";
-        font-weight: bold;
-    }
-    .dev-type {
-        color: #828DF8;
-    }
-    .lang {
-        color: #F471B5;
-    }
-    .greet {
-        color: #3ABFF8;
-        font-weight:lighter;
-    }
-    .name-break {
-        border-width: 0px;
-        height: 2px;
-        color: #3ABFF8;
-        background-color: #3ABFF8;
-        border-radius: 10px;
-    }
-</style>

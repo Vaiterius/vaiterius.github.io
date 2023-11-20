@@ -3,30 +3,32 @@ import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 
 import "@fontsource/roboto-mono";
-import "@fontsource/roboto-mono/700.css";  // Bold.
-import "@fontsource/roboto-mono/500.css";  // Medium.
+import "@fontsource/roboto-mono/700.css"; // Bold.
+import "@fontsource/roboto-mono/500.css"; // Medium.
 
 const { title } = Astro.props;
 ---
 
 <html lang="en" class="scroll-smooth focus:scroll-auto">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>{title}</title>
-    </head>
-    <body>
-        <Header navItemStyle="mx-10 mt-6 mb-4"/>
-        <main>
-            <slot />  <!-- Is replaced for main page content. -->
-        </main>
-        <Footer />
-    </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<!-- TODO the navbar -->
+		<!-- <Header /> -->
+		<main>
+			<!-- Is replaced for main page content. -->
+			<slot />
+		</main>
+		<Footer />
+	</body>
 </html>
 
 <style>
-    html {
-        font-family: "Roboto Mono";
-    }
+	html {
+		font-family: "Roboto Mono";
+	}
 </style>
