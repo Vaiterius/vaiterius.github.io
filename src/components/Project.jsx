@@ -10,7 +10,7 @@ const Project = ({ title, tools, description, imageUrl, imageAlt, sourceUrl, dem
 				<h2 className="card-title">{title}</h2>
 				<p>{description}</p>
 			</div>
-			<div className="card-actions justify-end mr-4">
+			<div className="card-actions mr-4 justify-end">
 				{tools.map((toolName, index) => (
 					<span key={index} className="badge badge-outline">
 						{toolName}

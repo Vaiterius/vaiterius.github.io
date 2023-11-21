@@ -1,6 +1,6 @@
 const Header = () => {
 	return (
-		<header className="md:container mx-auto px-6 sm:px-16">
+		<header className="mx-auto px-6 md:container sm:px-16">
 			<nav className="navbar">
 				{/* Hamburger dropdown menu */}
 				<div className="dropdown">
@@ -24,7 +24,7 @@ const Header = () => {
 					{/* Dropdown menu items */}
 					<ul
 						tabIndex={0}
-						className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+						className="menu dropdown-content rounded-box menu-sm z-[1] mt-3 w-52 bg-base-100 p-2 shadow"
 					>
 						<li>
 							<a href="#intro">Home</a>

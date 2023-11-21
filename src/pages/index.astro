@@ -7,12 +7,12 @@ import Project from "../components/Project.jsx";
 
 <Layout title="Home | Gerard Gandionco">
 	<!-- Construction sign -->
-	<div class="bg-warning text-center py-2 sm:container">
-		<p class="text-warning-content font-bold">🚧 Site under construction!</p>
+	<div class="bg-warning py-2 text-center sm:container">
+		<p class="font-bold text-warning-content">🚧 Site under construction!</p>
 	</div>
-	<div class="md:container text-center md:text-left mx-auto px-6 sm:px-16">
+	<div class="mx-auto px-6 text-center md:container sm:px-16 md:text-left">
 		<!-- Introduction -->
-		<section id="intro" class="flex flex-col justify-center h-screen mb-12">
+		<section id="intro" class="mb-12 flex h-screen flex-col justify-center">
 			<div>
 				<div>
 					<p class="text-primary">Hey, my name is...</p>
@@ -20,10 +20,10 @@ import Project from "../components/Project.jsx";
 				</div>
 				<HorizontalRule />
 				<p>
-					I'm a <span class="text-primary font-bold">full-stack developer</span> with a
-					focus on <span class="text-primary font-bold">back-end</span>
+					I'm a <span class="font-bold text-primary">full-stack developer</span> with a
+					focus on <span class="font-bold text-primary">back-end</span>
 					 development. I am passionate about creating interesting projects in my free
-					time using <span class="text-accent font-bold">Python</span> and an array of
+					time using <span class="font-bold text-accent">Python</span> and an array of
 					other languages.
 				</p>
 				<div class="my-4 space-x-4">
@@ -33,7 +33,7 @@ import Project from "../components/Project.jsx";
 			</div>
 		</section>
 		<!-- Background -->
-		<section id="background" class="flex flex-col justify-center h-screen mb-12">
+		<section id="background" class="mb-12 flex h-screen flex-col justify-center">
 			<div>
 				<h2 class="text-4xl font-bold">Who am I?</h2>
 				<HorizontalRule />
@@ -57,7 +57,7 @@ import Project from "../components/Project.jsx";
 			<div>
 				<h2 class="text-4xl font-bold">My Projects</h2>
 				<HorizontalRule />
-				<div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4">
+				<div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 					<Project
 						title="Project 1"
 						tools={["Tool 1", "Tool 2", "Tool 3"]}
@@ -98,7 +98,7 @@ import Project from "../components/Project.jsx";
 			</div>
 		</section>
 		<!-- Contact -->
-		<section id="contact" class="flex flex-col justify-center h-screen mb-12">
+		<section id="contact" class="mb-12 flex h-screen flex-col justify-center">
 			<div>
 				<h2 class="text-4xl font-bold">Contact me!</h2>
 				<HorizontalRule />
