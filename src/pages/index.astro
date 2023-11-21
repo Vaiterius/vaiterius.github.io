@@ -5,18 +5,18 @@ import HorizontalRule from "../components/HorizontalRule";
 import Project from "../components/Project.jsx";
 ---
 
-<Layout title="Home | Gerard Gandionco">
+<Layout title="Portfolio | Gerard Gandionco">
 	<!-- Construction sign -->
-	<div class="bg-warning py-2 text-center sm:container">
+	<div class="w-full bg-warning py-2 text-center">
 		<p class="font-bold text-warning-content">🚧 Site under construction!</p>
 	</div>
-	<div class="mx-auto px-6 text-center md:container sm:px-16 md:text-left">
+	<div class="lg:32 mx-auto px-6 text-center md:container sm:px-16 md:px-24 md:text-left">
 		<!-- Introduction -->
 		<section id="intro" class="mb-12 flex h-screen flex-col justify-center">
-			<div>
+			<div class="w-full lg:w-6/12">
 				<div>
 					<p class="text-primary">Hey, my name is...</p>
-					<h1 class="text-6xl font-bold">Gerard Gandionco</h1>
+					<h1 class="mb-2 text-6xl font-bold md:mb-0">Gerard Gandionco</h1>
 				</div>
 				<HorizontalRule />
 				<p>
@@ -35,29 +35,47 @@ import Project from "../components/Project.jsx";
 		<!-- Background -->
 		<section id="background" class="mb-12 flex h-screen flex-col justify-center">
 			<div>
-				<h2 class="text-4xl font-bold">Who am I?</h2>
+				<h2 class="mb-2 text-4xl font-bold md:mb-0">Who am I?</h2>
 				<HorizontalRule />
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolores, quia
-					nostrum accusamus excepturi atque, deleniti eius inventore qui ex adipisci
-					aliquam blanditiis beatae at molestiae earum quasi sed explicabo.
-				</p>
-			</div>
-			<div>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium qui animi
-					recusandae sed saepe velit aspernatur rem consequatur! Velit asperiores magnam
-					voluptatum atque eum modi qui ducimus beatae dolores facilis!
-				</p>
+
+				<!-- Education timeline -->
+				<ul class="timeline timeline-snap-icon timeline-vertical">
+					<li>
+						<div class="timeline-middle">
+							<!-- Checkmark icon -->
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 20 20"
+								fill="currentColor"
+								class="h-5 w-5"
+								><path
+									fill-rule="evenodd"
+									d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+									clip-rule="evenodd"></path></svg
+							>
+						</div>
+						<div class="timeline-start mb-10 md:text-end">
+							<time datetime="" class="font-mono italic">2023</time>
+							<div class="text-lg font-black">Hello World!</div>
+							 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit impedit
+							praesentium repellendus ratione provident perferendis dignissimos neque
+							veritatis excepturi officiis. Reprehenderit, voluptas ipsum quae sed sit
+							voluptates! Cumque, maxime a.
+						</div>
+						<hr />
+					</li>
+				</ul>
 			</div>
 		</section>
 		<!-- TODO refactor elements to source from content -->
 		<!-- Projects -->
 		<section id="projects" class="mb-12">
 			<div>
-				<h2 class="text-4xl font-bold">My Projects</h2>
+				<h2 class="mb-2 text-4xl font-bold md:mb-0">My Projects</h2>
 				<HorizontalRule />
-				<div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+				<div
+					class="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4"
+				>
 					<Project
 						title="Project 1"
 						tools={["Tool 1", "Tool 2", "Tool 3"]}
@@ -100,7 +118,7 @@ import Project from "../components/Project.jsx";
 		<!-- Contact -->
 		<section id="contact" class="mb-12 flex h-screen flex-col justify-center">
 			<div>
-				<h2 class="text-4xl font-bold">Contact me!</h2>
+				<h2 class="mb-2 text-4xl font-bold md:mb-0">Contact me!</h2>
 				<HorizontalRule />
 				<p class="my-4">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse atque pariatur
