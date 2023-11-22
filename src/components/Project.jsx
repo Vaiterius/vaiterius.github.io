@@ -18,8 +18,8 @@ const Project = ({ title, tools, description, imageUrl, imageAlt, sourceUrl, dem
 				))}
 			</div>
 			<div className="card-actions justify-end p-4">
-				<Button className="btn btn-primary" text="View Demo" url={sourceUrl} />
-				<Button className="btn btn-secondary" text="GitHub" url={demoUrl} />
+				<Button className="btn" text="View Demo" url={demoUrl} newTab={true} />
+				<Button className="btn btn-outline" text="GitHub" url={sourceUrl} newTab={true} />
 			</div>
 		</article>
 	);

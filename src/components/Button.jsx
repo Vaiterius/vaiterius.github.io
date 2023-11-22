@@ -1,6 +1,6 @@
-const Button = ({ text, className, url }) => {
+const Button = ({ text, className, url, newTab }) => {
 	return (
-		<a href={url}>
+		<a target={newTab && "_blank"} href={url}>
 			<button className={className}>{text}</button>
 		</a>
 	);
