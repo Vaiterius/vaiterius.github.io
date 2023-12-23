@@ -9,7 +9,7 @@ import Timeline from "../components/Timeline.jsx";
 <Layout title="Portfolio | Gerard Gandionco">
 	<!-- Construction sign -->
 	<div class="w-full bg-warning py-2 text-center">
-		<p class="text-lg font-bold text-warning-content">🚧 Site under construction!</p>
+		<p class="text-lg font-bold text-warning-content">🚧 Site under construction! 🚧</p>
 		<p class="text-sm text-warning-content">
 			Check out my <a class="font-bold hover:underline" href="https://github.com/Vaiterius"
 				>GitHub</a
@@ -49,14 +49,126 @@ import Timeline from "../components/Timeline.jsx";
 				</div>
 			</div>
 		</section>
+
+		<!-- Experience -->
+		<section id="experience">
+			<div>
+				<h2 class="mb-2 text-4xl font-bold md:mb-0">Experience</h2>
+				<HorizontalRule />
+
+				<div>
+					<ul
+						class="timeline timeline-vertical timeline-snap-icon max-md:timeline-compact"
+					>
+						<li>
+							<div class="timeline-middle">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+									class="h-5 w-5"
+									><path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+										clip-rule="evenodd"></path></svg
+								>
+							</div>
+							<div class="timeline-start mb-10 md:text-end">
+								<time class="font-mono italic">Summer 2024</time>
+								<div class="text-lg font-black">Your Company Here</div>
+								 Hire me!
+							</div>
+							<hr />
+						</li>
+						<li>
+							<hr />
+							<div class="timeline-middle">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 20 20"
+									fill="currentColor"
+									class="h-5 w-5"
+									><path
+										fill-rule="evenodd"
+										d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+										clip-rule="evenodd"></path></svg
+								>
+							</div>
+							<div class="timeline-end mb-10">
+								<time class="font-mono italic">October 2023 - Present</time>
+								<div class="text-lg font-black">Web Design Intern</div>
+								<div>IntersectLA | CSUN</div>
+								<div class="ml-7">
+									<ul class="list-disc">
+										<li>
+											Overhauled outdated webpages using Drupal and Wordpress
+											for multiple university department sites
+										</li>
+										<li>
+											Co-lead projects throughout its development while
+											getting periodic feedback from clients and project
+											advisors ensuring quality is up to company standards
+										</li>
+										<li>
+											Restructured site navigation improving user experience
+											and utilized Figma for wireframing and sitemapping
+										</li>
+									</ul>
+								</div>
+							</div>
+							<hr />
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
 		<!-- Background -->
 		<section id="background" class="mb-12 flex h-screen flex-col justify-center">
 			<div>
-				<h2 class="mb-2 text-4xl font-bold md:mb-0">About</h2>
+				<h2 class="mb-2 text-4xl font-bold md:mb-0">Background</h2>
 				<HorizontalRule />
 
-				<!-- Education timeline -->
-				<Timeline />
+				<div class="flex">
+					<!-- About me -->
+					<section>
+						<article>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+								quibusdam sapiente vero enim deserunt amet delectus animi officiis
+								quis! Esse quod sunt dignissimos consequuntur debitis quibusdam odio
+								non veritatis odit.
+							</p>
+						</article>
+					</section>
+
+					<!-- Education and Experience -->
+					<section class="flex flex-col">
+						<div>
+							<h3>Education</h3>
+							<article>
+								<h4>California State University, Northridge</h4>
+								<h5>August 2022 - December 2024 (expected)</h5>
+								<ul class="ml-7 list-disc">
+									<li>Bachelor of Science, Computer Science</li>
+									<li>Web Designer at student-run design company IXLA</li>
+									<li>
+										Clubs & Activities: Software Developers Club, Archery
+										Recreational Team, Environmental Club, Game Development Club
+									</li>
+								</ul>
+							</article>
+							<article>
+								<h4>College of the Canyons</h4>
+								<h5>August 2020 - June 2022</h5>
+								<ul class="ml-7 list-disc">
+									<li>Associate of Science, Physics</li>
+									<li>Associate of Science, Mathematics</li>
+								</ul>
+							</article>
+						</div>
+					</section>
+				</div>
 			</div>
 		</section>
 		<!-- TODO refactor elements to source from content -->
@@ -101,15 +213,6 @@ import Timeline from "../components/Timeline.jsx";
 						imageAlt="TODO image"
 						sourceUrl="https://github.com/Vaiterius/Monty-Pythons-Flying-API"
 						demoUrl="https://monty-pythons-flying-api.fly.dev/v1/docs"
-					/>
-					<Project
-						title="Flashcard Learning Application"
-						tools={["Python", "FastAPI", "SQLite", "Docker", "Tweepy"]}
-						description="A RESTful API that returns dialogue and quotes from a Monty Python's Flying Circus scripts dataset. Also comes with a Twitter bot that tweets quotes daily."
-						imageUrl="#"
-						imageAlt="TODO image"
-						sourceUrl="https://github.com/Advanced-Software-Solutions-Co/Brain-Bites-Prototype"
-						demoUrl=""
 					/>
 				</div>
 			</div>
