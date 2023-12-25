@@ -6,7 +6,7 @@ const Project = ({ title, tools, description, imageUrl, imageAlt, sourceUrl, dem
 			<figure>
 				<img src="https://placehold.co/600x300" alt={imageAlt} />
 			</figure>
-			<div className="card-body">
+			<div className="card-body text-left">
 				<h2 className="card-title">{title}</h2>
 				<p>{description}</p>
 			</div>

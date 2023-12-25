@@ -1,33 +1,54 @@
+import TimelineItem from "./TimelineItem";
+import Button from "./Button";
+
 const Timeline = () => {
 	return (
-		<ul className="timeline timeline-vertical timeline-snap-icon">
-			<li>
-				<div className="timeline-middle">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 20 20"
-						fillRule="currentColor"
-						className="h-5 w-5"
-					>
-						<path
-							fill-rule="evenodd"
-							d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-							clip-rule="evenodd"
-						></path>
-					</svg>
-				</div>
-				<div className="timeline-start mb-10 md:text-end">
-					<time datetime="" className="font-mono italic">
-						2023
-					</time>
-					<div className="text-lg font-black">Hello World!</div>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit impedit
-					praesentium repellendus ratione provident perferendis dignissimos neque
-					veritatis excepturi officiis. Reprehenderit, voluptas ipsum quae sed sit
-					voluptates! Cumque, maxime a.
-				</div>
-				<hr />
-			</li>
+		<ul className="timeline timeline-vertical timeline-snap-icon max-md:timeline-compact">
+			<TimelineItem
+				date="Summer 2024"
+				position="Software Engineer Intern"
+				company="Your Company Here"
+				content={
+					<div>
+						<p className="mb-3">
+							Currently seeking internship opportunities for next Summer. I am excited
+							to immerse myself in real-world software development and make meaningful
+							contributions. Who will be the company that will get me on my feet in
+							the industry?
+						</p>
+						<Button
+							url="#contact"
+							className="btn btn-outline w-full"
+							text="Hire me!"
+							newTab={false}
+						/>
+					</div>
+				}
+				onLeft={true}
+			/>
+			<TimelineItem
+				date="October 2023 - Present"
+				position="Web Design Intern"
+				company="IntersectLA | CSUN"
+				content={
+					<ul className="ml-0 list-none md:ml-7 md:list-disc">
+						<li className="mb-3">
+							Overhauled outdated webpages using Drupal and Wordpress for multiple
+							university department sites
+						</li>
+						<li className="mb-3">
+							Co-lead projects throughout its development while getting periodic
+							feedback from clients and project advisors ensuring quality is up to
+							company standards
+						</li>
+						<li>
+							Restructured site navigation improving user experience and utilized
+							Figma for wireframing and sitemapping
+						</li>
+					</ul>
+				}
+				onLeft={false}
+			/>
 		</ul>
 	);
 };

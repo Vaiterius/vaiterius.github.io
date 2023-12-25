@@ -4,6 +4,8 @@ import Button from "../components/Button.jsx";
 import HorizontalRule from "../components/HorizontalRule";
 import Project from "../components/Project.jsx";
 import Timeline from "../components/Timeline.jsx";
+import SectionHeader from "../components/SectionHeader.jsx";
+import SectionSubheader from "../components/SectionSubheader.jsx";
 ---
 
 <Layout title="Portfolio | Gerard Gandionco">
@@ -50,89 +52,17 @@ import Timeline from "../components/Timeline.jsx";
 			</div>
 		</section>
 
-		<!-- Experience -->
-		<section id="experience">
-			<div>
-				<h2 class="mb-2 text-4xl font-bold md:mb-0">Experience</h2>
-				<HorizontalRule />
-
-				<div>
-					<ul
-						class="timeline timeline-vertical timeline-snap-icon max-md:timeline-compact"
-					>
-						<li>
-							<div class="timeline-middle">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 20 20"
-									fill="currentColor"
-									class="h-5 w-5"
-									><path
-										fill-rule="evenodd"
-										d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-										clip-rule="evenodd"></path></svg
-								>
-							</div>
-							<div class="timeline-start mb-10 md:text-end">
-								<time class="font-mono italic">Summer 2024</time>
-								<div class="text-lg font-black">Your Company Here</div>
-								 Hire me!
-							</div>
-							<hr />
-						</li>
-						<li>
-							<hr />
-							<div class="timeline-middle">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 20 20"
-									fill="currentColor"
-									class="h-5 w-5"
-									><path
-										fill-rule="evenodd"
-										d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-										clip-rule="evenodd"></path></svg
-								>
-							</div>
-							<div class="timeline-end mb-10">
-								<time class="font-mono italic">October 2023 - Present</time>
-								<div class="text-lg font-black">Web Design Intern</div>
-								<div>IntersectLA | CSUN</div>
-								<div class="ml-7">
-									<ul class="list-disc">
-										<li>
-											Overhauled outdated webpages using Drupal and Wordpress
-											for multiple university department sites
-										</li>
-										<li>
-											Co-lead projects throughout its development while
-											getting periodic feedback from clients and project
-											advisors ensuring quality is up to company standards
-										</li>
-										<li>
-											Restructured site navigation improving user experience
-											and utilized Figma for wireframing and sitemapping
-										</li>
-									</ul>
-								</div>
-							</div>
-							<hr />
-						</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
 		<!-- Background -->
 		<section id="background" class="mb-12 flex h-screen flex-col justify-center">
 			<div>
-				<h2 class="mb-2 text-4xl font-bold md:mb-0">Background</h2>
+				<SectionHeader text="Background" />
 				<HorizontalRule />
 
-				<div class="flex">
+				<div class="flex flex-col lg:flex-row">
 					<!-- About me -->
 					<section>
-						<article>
+						<article class="mb-4">
+							<SectionSubheader text="About" />
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
 								quibusdam sapiente vero enim deserunt amet delectus animi officiis
@@ -140,16 +70,19 @@ import Timeline from "../components/Timeline.jsx";
 								non veritatis odit.
 							</p>
 						</article>
+						<article class="mb-4">
+							<SectionSubheader text="Skills" />
+						</article>
 					</section>
 
 					<!-- Education and Experience -->
 					<section class="flex flex-col">
 						<div>
-							<h3>Education</h3>
+							<SectionSubheader text="Education" />
 							<article>
-								<h4>California State University, Northridge</h4>
-								<h5>August 2022 - December 2024 (expected)</h5>
-								<ul class="ml-7 list-disc">
+								<h4 class="text-xl">California State University, Northridge</h4>
+								<div class="italic">August 2022 - December 2024 (expected)</div>
+								<ul class="ml-7 list-disc text-left">
 									<li>Bachelor of Science, Computer Science</li>
 									<li>Web Designer at student-run design company IXLA</li>
 									<li>
@@ -159,9 +92,9 @@ import Timeline from "../components/Timeline.jsx";
 								</ul>
 							</article>
 							<article>
-								<h4>College of the Canyons</h4>
-								<h5>August 2020 - June 2022</h5>
-								<ul class="ml-7 list-disc">
+								<h4 class="text-xl">College of the Canyons</h4>
+								<div class="italic">August 2020 - June 2022</div>
+								<ul class="ml-7 list-disc text-left">
 									<li>Associate of Science, Physics</li>
 									<li>Associate of Science, Mathematics</li>
 								</ul>
@@ -171,11 +104,12 @@ import Timeline from "../components/Timeline.jsx";
 				</div>
 			</div>
 		</section>
+
 		<!-- TODO refactor elements to source from content -->
 		<!-- Projects -->
 		<section id="projects" class="mb-12">
 			<div>
-				<h2 class="mb-2 text-4xl font-bold md:mb-0">My Projects</h2>
+				<SectionHeader text="My Projects" />
 				<HorizontalRule />
 				<div class="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
 					<Project
@@ -217,10 +151,23 @@ import Timeline from "../components/Timeline.jsx";
 				</div>
 			</div>
 		</section>
+
+		<!-- Experience -->
+		<section id="experience">
+			<div>
+				<SectionHeader text="Experience" />
+				<HorizontalRule />
+
+				<div>
+					<Timeline />
+				</div>
+			</div>
+		</section>
+
 		<!-- Contact -->
 		<section id="contact" class="mb-12 flex h-screen flex-col justify-center">
 			<div>
-				<h2 class="mb-2 text-4xl font-bold md:mb-0">Contact me!</h2>
+				<SectionHeader text="Contact" />
 				<HorizontalRule />
 				<p class="my-4">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse atque pariatur
