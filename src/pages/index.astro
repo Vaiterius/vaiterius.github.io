@@ -6,6 +6,7 @@ import Project from "../components/Project.jsx";
 import Timeline from "../components/Timeline.jsx";
 import SectionHeader from "../components/SectionHeader.jsx";
 import SectionSubheader from "../components/SectionSubheader.jsx";
+import SkillsSection from "../components/SkillsSection";
 ---
 
 <Layout title="Portfolio | Gerard Gandionco">
@@ -53,15 +54,15 @@ import SectionSubheader from "../components/SectionSubheader.jsx";
 		</section>
 
 		<!-- Background -->
-		<section id="background" class="mb-12 flex h-screen flex-col justify-center">
+		<section id="background" class="mb-12 flex h-full flex-col justify-center">
 			<div>
 				<SectionHeader text="Background" />
 				<HorizontalRule />
 
-				<div class="flex flex-col lg:flex-row">
+				<div class="flex flex-col items-center lg:flex-row lg:items-baseline">
 					<!-- About me -->
-					<section>
-						<article class="mb-4">
+					<section class="w-1/2">
+						<!-- <article class="mb-4">
 							<SectionSubheader text="About" />
 							<p>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
@@ -69,14 +70,15 @@ import SectionSubheader from "../components/SectionSubheader.jsx";
 								quis! Esse quod sunt dignissimos consequuntur debitis quibusdam odio
 								non veritatis odit.
 							</p>
-						</article>
+						</article> -->
 						<article class="mb-4">
-							<SectionSubheader text="Skills" />
+							<SectionSubheader text="Skills & Technologies" />
+							<SkillsSection />
 						</article>
 					</section>
 
 					<!-- Education and Experience -->
-					<section class="flex flex-col">
+					<section class="flex w-1/2 flex-col">
 						<div>
 							<SectionSubheader text="Education" />
 							<article>
@@ -113,7 +115,7 @@ import SectionSubheader from "../components/SectionSubheader.jsx";
 				<HorizontalRule />
 				<div class="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
 					<Project
-						title="Miniblog web app"
+						title="Blogging Web App"
 						tools={["Python", "Flask", "PostgreSQL", "Heroku", "AWS s3"]}
 						description="A blogging social application where users post on their feed, follow others, and interact with posts by liking and commenting. Allows user-uploaded images."
 						imageUrl="#"
@@ -128,16 +130,25 @@ import SectionSubheader from "../components/SectionSubheader.jsx";
 						imageUrl="#"
 						imageAlt="TODO image"
 						sourceUrl="https://github.com/Vaiterius/vaiterius.github.io"
-						demoUrl="#"
+						demoUrl="https://vaiterius.github.io/"
 					/>
 					<Project
 						title="Traditional Roguelike RPG"
 						tools={["Python"]}
-						description="An ASCII dungeon crawler filled with procedurally-generated levels where fight enemies, upgrade your gear, and progress your character. Made entirely within the standard library."
+						description="An terminal CLI dungeon crawler filled with procedurally-generated levels where you fight enemies, upgrade your gear, and progress your character. Made entirely within the standard library."
 						imageUrl="#"
 						imageAlt="TODO image"
 						sourceUrl="https://github.com/Vaiterius/Traditional-Roguelike"
-						demoUrl=""
+						demoUrl="#"
+					/>
+					<Project
+						title="Music Mosaic Timeline"
+						tools={["React", "TypeScript", "TailwindCSS"]}
+						description="A mini web app that displays your top music albums as 4x4 collages throughout the months of the year with the Last.fm API"
+						imageUrl="#"
+						imageAlt="TODO image"
+						sourceUrl="https://github.com/Vaiterius/Music-Mosaic-Timeline"
+						demoUrl="https://lastfm-albums-timeline.netlify.app/"
 					/>
 					<Project
 						title="Monty Python Quotes API & bot"
