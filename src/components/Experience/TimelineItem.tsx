@@ -1,4 +1,14 @@
-const TimelineItem = ({ date, position, company, content, onLeft }) => {
+import React from "react";
+
+import "../../blur.css";
+
+const TimelineItem = (props: {
+	date: string;
+	position: string;
+	company: string;
+	content: React.ReactNode;
+	onLeft: boolean;
+}) => {
 	return (
 		<li>
 			<hr />
@@ -16,22 +26,24 @@ const TimelineItem = ({ date, position, company, content, onLeft }) => {
 					/>
 				</svg>
 			</div>
-			<div className={onLeft ? "timeline-start mb-10 md:text-end" : "timeline-end mb-10"}>
-				<time className={onLeft ? "mr-2 font-mono italic" : "ml-2 font-mono italic"}>
-					{date}
+			<div
+				className={props.onLeft ? "timeline-start mb-10 md:text-end" : "timeline-end mb-10"}
+			>
+				<time className={props.onLeft ? "mr-2 font-mono italic" : "ml-2 font-mono italic"}>
+					{props.date}
 				</time>
 
-				<div className="card card-compact m-2 bg-neutral p-3 shadow-xl">
+				<div className="blurry card card-compact m-2 bg-neutral p-3 shadow-xl">
 					<div
 						className={
-							onLeft
+							props.onLeft
 								? "card-body items-center text-center md:items-end md:text-end"
 								: "card-body items-center text-center md:items-start md:text-start"
 						}
 					>
-						<h3 className="card-title text-xl font-black">{position}</h3>
-						<p className="text-info">{company}</p>
-						<div className="card-actions">{content}</div>
+						<h3 className="card-title text-xl font-black">{props.position}</h3>
+						<p className="text-info">{props.company}</p>
+						<div className="card-actions">{props.content}</div>
 					</div>
 				</div>
 			</div>

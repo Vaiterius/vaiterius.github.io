@@ -1,14 +1,15 @@
-import Skill from "./Skill";
+import Skill from "./SkillItem";
+import "../../blur.css";
 
 const SkillsSection = () => {
 	return (
 		<div>
 			{/* Languages/Databases */}
-			<div className="m-2 ml-0 rounded-lg bg-neutral p-2">
-				<div className="flex">
-					<h4 className="mb-2 border-b-2 font-bold italic">Languages/Databases</h4>
+			<div className="blurry m-2 ml-0 rounded-lg bg-neutral p-2">
+				<div className="flex justify-center lg:justify-start">
+					<h4 className="mb-2 border-b-2 font-bold">Languages/Databases</h4>
 				</div>
-				<ul className="flex flex-row flex-wrap">
+				<ul className="flex flex-wrap justify-center lg:justify-start">
 					<Skill name="Python" url="/logos/python.svg" />
 					<Skill name="TypeScript" url="/logos/typescript.svg" />
 					<Skill name="Java" url="/logos/java.svg" />
@@ -19,9 +20,11 @@ const SkillsSection = () => {
 				</ul>
 			</div>
 			{/* Frameworks/Libraries */}
-			<div className="m-2 ml-0 rounded-lg bg-neutral p-2">
-				<h4>Frameworks/Libraries</h4>
-				<ul>
+			<div className="blurry m-2 ml-0 rounded-lg bg-neutral p-2">
+				<div className="flex justify-center lg:justify-start">
+					<h4 className="mb-2 border-b-2 font-bold">Frameworks/Libraries</h4>
+				</div>
+				<ul className="flex flex-wrap justify-center lg:justify-start">
 					<Skill name="Flask" url="/logos/flask.svg" lightBackground={true} />
 					<Skill name="Django" url="/logos/django.svg" />
 					<Skill name="React" url="/logos/react.svg" />
@@ -31,9 +34,11 @@ const SkillsSection = () => {
 				</ul>
 			</div>
 			{/* Platforms */}
-			<div className="m-2 ml-0 rounded-lg bg-neutral p-2">
-				<ul>
-					<h4>Platforms</h4>
+			<div className="blurry m-2 ml-0 rounded-lg bg-neutral p-2">
+				<div className="flex justify-center lg:justify-start">
+					<h4 className="mb-2 border-b-2 font-bold">Platforms</h4>
+				</div>
+				<ul className="flex flex-wrap justify-center lg:justify-start">
 					<Skill name="Heroku" url="/logos/heroku.svg" />
 					<Skill name="Fly.io" url="/logos/fly.io.svg" />
 					<Skill name="Netlify" url="/logos/netlify.svg" />
@@ -44,9 +49,11 @@ const SkillsSection = () => {
 				</ul>
 			</div>
 			{/* Tools */}
-			<div className="m-2 ml-0 rounded-lg bg-neutral p-2">
-				<h4>Tools</h4>
-				<ul>
+			<div className="blurry m-2 ml-0 rounded-lg bg-neutral p-2">
+				<div className="flex justify-center lg:justify-start">
+					<h4 className="mb-2 border-b-2 font-bold">Tools</h4>
+				</div>
+				<ul className="flex flex-wrap justify-center lg:justify-start">
 					<Skill name="Git" url="/logos/git.svg" />
 					<Skill name="Docker" url="/logos/docker.svg" />
 					<Skill name="Jest" url="/logos/jest.svg" />

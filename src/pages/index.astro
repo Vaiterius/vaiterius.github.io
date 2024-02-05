@@ -1,165 +1,35 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Button from "../components/Button.jsx";
-import HorizontalRule from "../components/HorizontalRule";
-import Project from "../components/Project.jsx";
-import Timeline from "../components/Timeline.jsx";
+import ConstructionSign from "../components/ConstructionSign.tsx";
+import Intro from "../components/Intro/Intro.tsx";
+import Background from "../components/Background/Background.tsx";
 import SectionHeader from "../components/SectionHeader.jsx";
-import SectionSubheader from "../components/SectionSubheader.jsx";
-import SkillsSection from "../components/SkillsSection";
+import HorizontalRule from "../components/HorizontalRule.tsx";
+import ProjectSection from "../components/Projects/Projects.tsx";
+import Timeline from "../components/Experience/Timeline.jsx";
+import Contact from "../components/Contact/Contact.tsx";
 ---
 
 <Layout title="Portfolio | Gerard Gandionco">
 	<!-- Construction sign -->
-	<div class="w-full bg-warning py-2 text-center">
-		<p class="text-lg font-bold text-warning-content">🚧 Site under construction! 🚧</p>
-		<p class="text-sm text-warning-content">
-			Check out my <a class="font-bold hover:underline" href="https://github.com/Vaiterius"
-				>GitHub</a
-			>
-			 in the meantime
-		</p>
-	</div>
+	<ConstructionSign />
 	<div class="lg:32 mx-auto px-6 text-center md:container sm:px-16 md:px-24 md:text-left">
 		<!-- Introduction -->
 		<section id="intro" class="mb-12 flex h-screen flex-col justify-center">
-			<div class="w-full lg:w-6/12">
-				<div>
-					<p class="text-primary">Hey, my name is...</p>
-					<h1 class="mb-2 text-6xl font-bold md:mb-0">Gerard Gandionco</h1>
-				</div>
-				<HorizontalRule />
-				<p>
-					I'm a <span class="font-bold text-primary">full-stack developer</span> with a
-					focus on <span class="font-bold text-primary">back-end</span>
-					 development. I am passionate about creating interesting projects in my free
-					time using <span class="font-bold text-accent">Python</span> and an array of
-					other languages.
-				</p>
-				<div class="my-4 space-x-4">
-					<Button
-						url="#contact"
-						className="btn btn-outline"
-						text="Get in touch"
-						newTab={false}
-					/>
-					<Button
-						url="/portfolio_resume.pdf"
-						className="btn btn-outline btn-info"
-						text="My resume"
-						newTab={true}
-					/>
-				</div>
-			</div>
+			<Intro />
 		</section>
 
 		<!-- Background -->
 		<section id="background" class="mb-12 flex h-full flex-col justify-center">
-			<div>
-				<SectionHeader text="Background" />
-				<HorizontalRule />
-
-				<div class="flex flex-col items-center lg:flex-row lg:items-baseline">
-					<!-- About me -->
-					<section class="w-1/2">
-						<!-- <article class="mb-4">
-							<SectionSubheader text="About" />
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-								quibusdam sapiente vero enim deserunt amet delectus animi officiis
-								quis! Esse quod sunt dignissimos consequuntur debitis quibusdam odio
-								non veritatis odit.
-							</p>
-						</article> -->
-						<article class="mb-4">
-							<SectionSubheader text="Skills & Technologies" />
-							<SkillsSection />
-						</article>
-					</section>
-
-					<!-- Education and Experience -->
-					<section class="flex w-1/2 flex-col">
-						<div>
-							<SectionSubheader text="Education" />
-							<article>
-								<h4 class="text-xl">California State University, Northridge</h4>
-								<div class="italic">August 2022 - December 2024 (expected)</div>
-								<ul class="ml-7 list-disc text-left">
-									<li>Bachelor of Science, Computer Science</li>
-									<li>Web Designer at student-run design company IXLA</li>
-									<li>
-										Clubs & Activities: Software Developers Club, Archery
-										Recreational Team, Environmental Club, Game Development Club
-									</li>
-								</ul>
-							</article>
-							<article>
-								<h4 class="text-xl">College of the Canyons</h4>
-								<div class="italic">August 2020 - June 2022</div>
-								<ul class="ml-7 list-disc text-left">
-									<li>Associate of Science, Physics</li>
-									<li>Associate of Science, Mathematics</li>
-								</ul>
-							</article>
-						</div>
-					</section>
-				</div>
-			</div>
+			<Background />
 		</section>
 
-		<!-- TODO refactor elements to source from content -->
 		<!-- Projects -->
 		<section id="projects" class="mb-12">
 			<div>
 				<SectionHeader text="My Projects" />
 				<HorizontalRule />
-				<div class="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
-					<Project
-						title="Blogging Web App"
-						tools={["Python", "Flask", "PostgreSQL", "Heroku", "AWS s3"]}
-						description="A blogging social application where users post on their feed, follow others, and interact with posts by liking and commenting. Allows user-uploaded images."
-						imageUrl="#"
-						imageAlt="TODO image"
-						sourceUrl="https://github.com/Vaiterius/Miniblog-App"
-						demoUrl="https://flask-bruhlog.herokuapp.com/global"
-					/>
-					<Project
-						title="Portfolio Website"
-						tools={["Astro", "React", "TailwindCSS", "daisyUI"]}
-						description="You're looking at it right now! A website to showcase my projects and all about me. Made to be responsive on mobile. (Currently in redevelopment)"
-						imageUrl="#"
-						imageAlt="TODO image"
-						sourceUrl="https://github.com/Vaiterius/vaiterius.github.io"
-						demoUrl="https://vaiterius.github.io/"
-					/>
-					<Project
-						title="Traditional Roguelike RPG"
-						tools={["Python"]}
-						description="An terminal CLI dungeon crawler filled with procedurally-generated levels where you fight enemies, upgrade your gear, and progress your character. Made entirely within the standard library."
-						imageUrl="#"
-						imageAlt="TODO image"
-						sourceUrl="https://github.com/Vaiterius/Traditional-Roguelike"
-						demoUrl="#"
-					/>
-					<Project
-						title="Music Mosaic Timeline"
-						tools={["React", "TypeScript", "TailwindCSS"]}
-						description="A mini web app that displays your top music albums as 4x4 collages throughout the months of the year with the Last.fm API"
-						imageUrl="#"
-						imageAlt="TODO image"
-						sourceUrl="https://github.com/Vaiterius/Music-Mosaic-Timeline"
-						demoUrl="https://lastfm-albums-timeline.netlify.app/"
-					/>
-					<Project
-						title="Monty Python Quotes API & bot"
-						tools={["Python", "FastAPI", "SQLite", "Docker", "Tweepy"]}
-						description="A RESTful API that returns dialogue and quotes from a Monty Python's Flying Circus scripts dataset. Also comes with a Twitter bot that tweets quotes daily."
-						imageUrl="#"
-						imageAlt="TODO image"
-						sourceUrl="https://github.com/Vaiterius/Monty-Pythons-Flying-API"
-						demoUrl="https://monty-pythons-flying-api.fly.dev/v1/docs"
-					/>
-				</div>
+				<ProjectSection />
 			</div>
 		</section>
 
@@ -168,10 +38,7 @@ import SkillsSection from "../components/SkillsSection";
 			<div>
 				<SectionHeader text="Experience" />
 				<HorizontalRule />
-
-				<div>
-					<Timeline />
-				</div>
+				<Timeline />
 			</div>
 		</section>
 
@@ -180,14 +47,8 @@ import SkillsSection from "../components/SkillsSection";
 			<div>
 				<SectionHeader text="Contact" />
 				<HorizontalRule />
-				<p class="my-4">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse atque pariatur
-					dolor odit, quae reiciendis eum corrupti obcaecati rerum saepe facere cum
-					blanditiis quisquam doloremque quasi autem quas iste unde.
-				</p>
+				<Contact />
 			</div>
 		</section>
 	</div>
 </Layout>
-
-<style></style>
