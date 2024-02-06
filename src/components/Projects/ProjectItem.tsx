@@ -13,7 +13,7 @@ const ProjectItem = (props: {
 	return (
 		<article className="blurry card card-compact bg-neutral shadow-xl">
 			<figure>
-				<img src="https://placehold.co/600x300" alt={props.imageAlt} />
+				<img src={props.imageUrl} alt={props.imageAlt} />
 			</figure>
 			<div className="card-body text-left">
 				<h2 className="card-title">{props.title}</h2>
