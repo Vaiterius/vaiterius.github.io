@@ -5,7 +5,7 @@ const EducationItem = (props: {
 	items: string[];
 }) => {
 	return (
-		<article className="blurry m-2 rounded-lg bg-base-100 p-4">
+		<article className="blurry m-2 rounded-xl bg-base-100 p-4">
 			<div className="flex">
 				<img
 					className="ml-2 mr-2 h-14 w-14"
@@ -13,8 +13,8 @@ const EducationItem = (props: {
 					alt={`Logo of ${props.name}`}
 				/>
 				<div className="flex flex-col">
-					<h4 className="text-xl font-bold">{props.name}</h4>
-					<div className="italic">{props.dates}</div>
+					<h4 className="text-xl font-bold text-primary">{props.name}</h4>
+					<div className="italic text-secondary">{props.dates}</div>
 				</div>
 			</div>
 			<ul className="ml-7 list-disc text-left">

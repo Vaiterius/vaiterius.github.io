@@ -2,10 +2,10 @@ import ProjectItem from "./ProjectItem";
 
 const ProjectSection = () => {
 	return (
-		<div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3">
+		<div className="mt-4 grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3">
 			<ProjectItem
 				title="Blogging Web App"
-				tools={["Python", "Flask", "PostgreSQL", "Heroku", "AWS s3"]}
+				tools={["Python", "Flask", "PostgreSQL", "Heroku", "AWS"]}
 				description="A blogging social application where users post on their feed, follow others, and interact with posts by liking and commenting. Allows user-uploaded images."
 				imageUrl="/images/bruhlog.png"
 				imageAlt="A comment section from one of my previous blog posts"

@@ -16,12 +16,12 @@ const ProjectItem = (props: {
 				<img src={props.imageUrl} alt={props.imageAlt} />
 			</figure>
 			<div className="card-body text-left">
-				<h2 className="card-title">{props.title}</h2>
+				<h2 className="card-title font-bold text-primary">{props.title}</h2>
 				<p>{props.description}</p>
 			</div>
 			<div className="card-actions mr-4 justify-end">
 				{props.tools.map((toolName: string, index: number) => (
-					<span key={index} className="badge badge-outline">
+					<span key={index} className="badge badge-secondary badge-outline">
 						{toolName}
 					</span>
 				))}

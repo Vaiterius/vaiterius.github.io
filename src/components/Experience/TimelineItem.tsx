@@ -6,6 +6,7 @@ const TimelineItem = (props: {
 	date: string;
 	position: string;
 	company: string;
+	logoUrl: string;
 	content: React.ReactNode;
 	onLeft: boolean;
 }) => {
@@ -33,6 +34,7 @@ const TimelineItem = (props: {
 					{props.date}
 				</time>
 
+				{/* The card itself */}
 				<div className="blurry card card-compact m-2 bg-neutral p-3 shadow-xl">
 					<div
 						className={
@@ -41,8 +43,22 @@ const TimelineItem = (props: {
 								: "card-body items-center text-center md:items-start md:text-start"
 						}
 					>
-						<h3 className="card-title text-xl font-black">{props.position}</h3>
-						<p className="text-info">{props.company}</p>
+						<div className="flex">
+							{/* Optional logo */}
+							{props.logoUrl !== "" && (
+								<img
+									className="ml-2 mr-4 h-14 w-14 rounded-md bg-white p-2"
+									src={props.logoUrl}
+									alt={`Logo of ${props.company}`}
+								/>
+							)}
+							<div>
+								<h3 className="card-title text-xl font-black text-primary">
+									{props.position}
+								</h3>
+								<p className="text-secondary">{props.company}</p>
+							</div>
+						</div>
 						<div className="card-actions">{props.content}</div>
 					</div>
 				</div>

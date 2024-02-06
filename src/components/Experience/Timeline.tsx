@@ -8,6 +8,7 @@ const Timeline = () => {
 				date="Summer 2024"
 				position="Software Engineer Intern"
 				company="Your Company Here"
+				logoUrl=""
 				content={
 					<div>
 						<p className="mb-3">
@@ -30,6 +31,7 @@ const Timeline = () => {
 				date="October 2023 - Present"
 				position="Web Design Intern"
 				company="IntersectLA | CSUN"
+				logoUrl="/logos/ixla.png"
 				content={
 					<ul className="ml-0 list-none md:ml-7 md:list-disc">
 						<li className="mb-3">
