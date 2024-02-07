@@ -13,13 +13,13 @@ const ProjectSection = () => {
 				demoUrl="https://flask-bruhlog.herokuapp.com/global"
 			/>
 			<ProjectItem
-				title="Portfolio Website"
-				tools={["Astro", "React", "TailwindCSS", "daisyUI"]}
-				description="You're looking at it right now! A website to showcase my projects and all about me. Made to be responsive on mobile. (Currently in redevelopment)"
-				imageUrl="/images/portfolio-website.png"
-				imageAlt="The intro section for my personal portfolio website"
-				sourceUrl="https://github.com/Vaiterius/vaiterius.github.io"
-				demoUrl="https://vaiterius.github.io/"
+				title="Music Mosaic Timeline"
+				tools={["React", "TypeScript", "TailwindCSS"]}
+				description="A mini web app that displays your top music albums as 4x4 collages throughout the months of the year with the Last.fm API. (Hint: type my username Vaiterius!)"
+				imageUrl="/images/music-mosaic-timeline.png"
+				imageAlt="2022 timeline album images from my username"
+				sourceUrl="https://github.com/Vaiterius/Music-Mosaic-Timeline"
+				demoUrl="https://lastfm-albums-timeline.netlify.app/"
 			/>
 			<ProjectItem
 				title="Traditional Roguelike RPG"
@@ -31,15 +31,6 @@ const ProjectSection = () => {
 				demoUrl="https://github.com/Vaiterius/Traditional-Roguelike?tab=readme-ov-file#run-me"
 			/>
 			<ProjectItem
-				title="Music Mosaic Timeline"
-				tools={["React", "TypeScript", "TailwindCSS"]}
-				description="A mini web app that displays your top music albums as 4x4 collages throughout the months of the year with the Last.fm API"
-				imageUrl="/images/music-mosaic-timeline.png"
-				imageAlt="2022 timeline album images from my username"
-				sourceUrl="https://github.com/Vaiterius/Music-Mosaic-Timeline"
-				demoUrl="https://lastfm-albums-timeline.netlify.app/"
-			/>
-			<ProjectItem
 				title="Monty Python Quotes API & bot"
 				tools={["Python", "FastAPI", "SQLite", "Docker", "Tweepy"]}
 				description="A RESTful API that returns dialogue and quotes from a Monty Python's Flying Circus scripts dataset. Also comes with a Twitter bot that tweets quotes daily."
@@ -47,6 +38,15 @@ const ProjectSection = () => {
 				imageAlt="A swagger UI documentation of the API"
 				sourceUrl="https://github.com/Vaiterius/Monty-Pythons-Flying-API"
 				demoUrl="https://monty-pythons-flying-api.fly.dev/v1/docs"
+			/>
+			<ProjectItem
+				title="Portfolio Website"
+				tools={["Astro", "React", "TailwindCSS", "daisyUI"]}
+				description="You're looking at it right now! A website to showcase my software projects and all about me. Responsive on mobile. Hope you like it! :)"
+				imageUrl="/images/portfolio-website.png"
+				imageAlt="The intro section for my personal portfolio website"
+				sourceUrl="https://github.com/Vaiterius/vaiterius.github.io"
+				demoUrl="https://vaiterius.github.io/"
 			/>
 		</div>
 	);

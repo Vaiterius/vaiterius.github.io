@@ -35,17 +35,20 @@ const Timeline = () => {
 				content={
 					<ul className="ml-0 list-none md:ml-7 md:list-disc">
 						<li className="mb-3">
-							Overhauled outdated webpages using Drupal and Wordpress for multiple
-							university department sites
+							Co-lead the migration process of 4 university department websites
+							achieving a more contemporary look via comprehensive UX/UI redesigns
 						</li>
 						<li className="mb-3">
-							Co-lead projects throughout its development while getting periodic
-							feedback from clients and project advisors ensuring quality is up to
-							company standards
+							Employed Figma for restructuring site navigation via sitemapping and
+							wireframing for a more intuitive and user-friendly experience
 						</li>
-						<li>
-							Restructured site navigation improving user experience and utilized
-							Figma for wireframing and sitemapping
+						<li className="mb-3">
+							Implemented the content and designs into the new webpages using Drupal
+							CMS
+						</li>
+						<li className="mb-3">
+							Participated in periodic client meetings and incorporated feedback to
+							ensure quality is up to company and client standards
 						</li>
 					</ul>
 				}

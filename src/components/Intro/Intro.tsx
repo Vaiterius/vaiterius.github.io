@@ -10,11 +10,13 @@ const Intro = () => {
 			</div>
 			<HorizontalRule />
 			<p>
-				I'm a <span className="font-bold text-primary">full-stack developer</span> with a
-				focus on <span className="font-bold text-primary">back-end </span>
-				development. I am passionate about creating interesting projects in my free time
-				using <span className="font-bold text-accent">Python</span> and an array of other
-				languages.
+				I'm an aspiring <span className="font-bold text-primary">full-stack developer</span>
+				, dedicated to blending innovative solutions with robust technical skills across
+				both <span className="font-bold text-secondary">front-end</span> and{" "}
+				<span className="font-bold text-secondary">back-end</span> technologies. Proficient
+				in <span className="font-bold text-accent">Python</span>, I'm passionate about
+				creating interesting projects in my free time using an array of different
+				technologies.
 			</p>
 			<div className="my-4 space-x-4">
 				<Button

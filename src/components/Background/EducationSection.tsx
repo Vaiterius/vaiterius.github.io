@@ -10,7 +10,7 @@ const EducationSection = () => {
 				logoUrl="/logos/csun.png"
 				items={[
 					"Bachelor of Science, Computer Science",
-					"Web Designer at student-run design company IXLA",
+					"Web Designer at student-run design company IntersectLA",
 					"Clubs & Activities: Software Developers Club, Archery Recreational Team, Environmental Club, Game Development Club",
 				]}
 			/>
