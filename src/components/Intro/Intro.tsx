@@ -28,7 +28,7 @@ const Intro = () => {
 					newTab={false}
 				/>
 				<Button
-					url="/portfolio_resume.pdf"
+					url="https://gerard-gandionco-resume.tiiny.site"
 					className="btn btn-outline btn-info"
 					text="My resume"
 					newTab={true}
