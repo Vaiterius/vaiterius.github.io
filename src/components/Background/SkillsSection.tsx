@@ -38,6 +38,7 @@ const SkillsSection = () => {
 					<ul className="flex flex-wrap justify-center space-x-4 lg:justify-start">
 						<Skill name="Heroku" url="/logos/heroku.svg" />
 						<Skill name="Fly.io" url="/logos/fly.io.svg" />
+						<Skill name="Expo" url="/logos/expo.svg" lightBackground={true} />
 						<Skill name="Netlify" url="/logos/netlify.svg" />
 						<Skill name="AWS" url="/logos/aws.svg" lightBackground={true} />
 						<Skill name="Google Cloud" url="/logos/google-cloud.svg" />

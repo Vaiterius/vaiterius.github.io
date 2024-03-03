@@ -11,6 +11,7 @@ const EducationSection = () => {
 				items={[
 					"Bachelor of Science, Computer Science",
 					"Web Designer at student-run design company IntersectLA",
+					"Associate Software Developer at ARCS",
 					"Clubs & Activities: Software Developers Club, Archery Recreational Team, Environmental Club, Game Development Club",
 				]}
 			/>

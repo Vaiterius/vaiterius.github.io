@@ -7,6 +7,7 @@ const TimelineItem = (props: {
 	position: string;
 	company: string;
 	logoUrl: string;
+	logoWithPadding: boolean;
 	content: React.ReactNode;
 	onLeft: boolean;
 }) => {
@@ -43,16 +44,20 @@ const TimelineItem = (props: {
 								: "card-body items-center text-center md:items-start md:text-start"
 						}
 					>
-						<div className="flex">
+						<div className={props.onLeft ? "flex flex-row-reverse" : "flex"}>
 							{/* Optional logo */}
 							{props.logoUrl !== "" && (
 								<img
-									className="ml-2 mr-4 h-14 w-14 rounded-md bg-white p-2"
+									className={`ml-2 ${
+										props.onLeft ? "mr-0" : "mr-4"
+									} h-14 w-14 rounded-md bg-white ${
+										props.logoWithPadding && "p-2"
+									} hidden md:flex`}
 									src={props.logoUrl}
 									alt={`Logo of ${props.company}`}
 								/>
 							)}
-							<div>
+							<div className={props.onLeft ? "mr-2 flex flex-col items-end" : ""}>
 								<h3 className="card-title text-xl font-black text-primary">
 									{props.position}
 								</h3>
@@ -66,6 +71,10 @@ const TimelineItem = (props: {
 			<hr />
 		</li>
 	);
+};
+
+TimelineItem.defaultProps = {
+	logoWithPadding: false,
 };
 
 export default TimelineItem;
