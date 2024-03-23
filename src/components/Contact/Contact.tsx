@@ -30,12 +30,12 @@ const Contact = () => {
 			</div>
 			{/* Social logos */}
 			<div className="mr-4 flex items-center justify-center space-x-4">
-				<a href="https://www.linkedin.com/in/vaiterius/" target="_blank">
+				<a href="https://github.com/Vaiterius" target="_blank">
 					<div className="flex h-14 w-14 items-center justify-center rounded-md bg-white p-1">
 						<img className="h-11 w-11" src="/logos/github.svg" alt="GitHub logo" />
 					</div>
 				</a>
-				<a href="https://github.com/Vaiterius" target="_blank">
+				<a href="https://www.linkedin.com/in/vaiterius/" target="_blank">
 					<div className="h-14 w-14">
 						<img className="h-14 w-14" src="/logos/linkedin.svg" alt="LinkedIn logo" />
 					</div>
