@@ -10,7 +10,17 @@ const ProjectSection = () => {
 				imageUrl="/images/bruhlog.png"
 				imageAlt="A comment section from one of my previous blog posts"
 				sourceUrl="https://github.com/Vaiterius/Miniblog-App"
-				demoUrl="https://flask-bruhlog.herokuapp.com/global"
+				// demoUrl="https://flask-bruhlog.herokuapp.com/global"
+				demoUrl=""
+			/>
+			<ProjectItem
+				title="Greatreads Book Review Platform"
+				tools={[".NET", "C#", "Angular", "TypeScript", "PostgreSQL", "AWS"]}
+				description="A book-reviewing platform for avid readers to search millions of Google book entries and write reviews on them"
+				imageUrl="/images/greatreads.png"
+				imageAlt="An early snapshot of the now-defunct website on the book search page"
+				sourceUrl="https://github.com/Vaiterius/Book-Review-App"
+				demoUrl=""
 			/>
 			<ProjectItem
 				title="Music Mosaic Timeline"

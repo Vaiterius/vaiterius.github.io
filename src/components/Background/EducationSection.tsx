@@ -10,16 +10,21 @@ const EducationSection = () => {
 				logoUrl="/logos/csun.png"
 				items={[
 					"Bachelor of Science, Computer Science",
-					"Web Designer at student-run design company IntersectLA",
+					"Web Designer at on-campus design agency, IntersectLA",
 					"Associate Software Developer at ARCS",
-					"Clubs & Activities: Software Developers Club, Archery Recreational Team, Environmental Club, Game Development Club",
+					"General Officer at the Game Development Club",
+					"Clubs & Activities: Game Development Club, Software Developers Club, Punk Rock Club, Archery Recreational Team, Environmental Club",
 				]}
 			/>
 			<EducationItem
 				name="College of the Canyons"
 				dates="August 2020 - May 2022"
 				logoUrl="/logos/coc.png"
-				items={["Associate of Science, Physics", "Associate of Science, Mathematics"]}
+				items={[
+					"Associate of Science, Physics",
+					"Associate of Science, Mathematics",
+					"Mathematics, Engineering and Science Achievement (MESA) Program",
+				]}
 			/>
 		</div>
 	);

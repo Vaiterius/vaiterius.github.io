@@ -16,7 +16,8 @@ const Intro = () => {
 				, committed to merging solid technical skills across both{" "}
 				<span className="font-bold text-secondary">front-end</span> and{" "}
 				<span className="font-bold text-secondary">back-end</span> technologies. Proficient
-				in <span className="font-bold text-accent">Python</span>, I'm passionate about
+				in <span className="font-bold text-accent">Python</span> and{" "}
+				<span className="font-bold text-accent">TypeScript</span>, I'm passionate about
 				creating interesting projects in my free time using an array of different
 				technologies.
 			</p>

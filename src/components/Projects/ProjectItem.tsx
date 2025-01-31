@@ -27,7 +27,12 @@ const ProjectItem = (props: {
 				))}
 			</div>
 			<div className="card-actions justify-end p-4">
-				<Button className="btn" text="View Demo" url={props.demoUrl} newTab={true} />
+				{props.demoUrl === "" ? (
+					<></>
+				) : (
+					<Button className="btn" text="View Demo" url={props.demoUrl} newTab={true} />
+				)}
+
 				<Button
 					className="btn btn-outline"
 					text="GitHub"

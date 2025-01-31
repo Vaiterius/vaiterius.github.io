@@ -5,17 +5,17 @@ const Timeline = () => {
 	return (
 		<ul className="timeline timeline-vertical timeline-snap-icon max-md:timeline-compact">
 			<TimelineItem
-				date="Summer 2024"
-				position="Software Engineer Intern"
+				date="2025"
+				position="Junior Software Engineer"
 				company="(Your Company Here)"
 				logoUrl=""
 				content={
 					<div>
 						<p className="mb-3">
-							Currently seeking internship opportunities for this Summer. I am excited
-							to immerse myself in real-world software development and make meaningful
-							contributions. Who will be the company that will get me on my feet in
-							the industry?
+							Currently seeking new grad, entry-level opportunities this year. I am
+							excited to immerse myself in real-world software development and make
+							meaningful contributions. Who will be the company that will get me on my
+							feet in the industry?
 						</p>
 						<Button
 							url="#contact"
@@ -28,7 +28,7 @@ const Timeline = () => {
 				onLeft={false}
 			/>
 			<TimelineItem
-				date="February 2024 - Present"
+				date="February 2024 - December 2024"
 				position="Associate Software Developer"
 				company="Autonomy Research Center for STEAHM (ARCS) | CSUN"
 				logoUrl="/logos/arcs.png"
@@ -43,7 +43,7 @@ const Timeline = () => {
 				onLeft={true}
 			/>
 			<TimelineItem
-				date="October 2023 - Present"
+				date="October 2023 - December 2024"
 				position="Web Designer"
 				company="IntersectLA | CSUN"
 				logoUrl="/logos/ixla.png"
@@ -57,6 +57,22 @@ const Timeline = () => {
 					</p>
 				}
 				onLeft={false}
+			/>
+			<TimelineItem
+				date="August 2024 - November 2024"
+				position="QA Intern"
+				company="5Head Games"
+				logoUrl="/logos/5headgames.png"
+				logoWithPadding={false}
+				content={
+					<p className="ml-0 list-none md:ml-2 md:list-disc">
+						Contributed to quality assurance processes for the browser-based web3
+						trading card game, Enders Gate, ensuring product stability through
+						systematic testing and detailed issue documentation via identifying critical
+						issues and submitting bug reports.
+					</p>
+				}
+				onLeft={true}
 			/>
 		</ul>
 	);
