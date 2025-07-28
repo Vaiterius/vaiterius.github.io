@@ -15,10 +15,10 @@ const ProjectSection = () => {
 			/>
 			<ProjectItem
 				title="Greatreads Book Review Platform"
-				tools={[".NET", "C#", "Angular", "TypeScript", "PostgreSQL", "AWS"]}
-				description="A book-reviewing platform for avid readers to search millions of Google book entries and write reviews on them"
+				tools={[".NET", "C#", "Angular", "TypeScript", "Playwright", "PostgreSQL", "AWS"]}
+				description="A book-reviewing platform for avid readers to search millions of Google book entries and write reviews on them."
 				imageUrl="/images/greatreads.png"
-				imageAlt="An early snapshot of the now-defunct website on the book search page"
+				imageAlt="An early snapshot of the website on the book search page"
 				sourceUrl="https://github.com/Vaiterius/Book-Review-App"
 				demoUrl=""
 			/>
