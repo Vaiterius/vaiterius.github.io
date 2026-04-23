@@ -4,13 +4,12 @@ const ProjectSection = () => {
 	return (
 		<div className="mt-4 grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3">
 			<ProjectItem
-				title="Blogging Web App"
-				tools={["Python", "Flask", "PostgreSQL", "Heroku", "AWS"]}
-				description="A blogging social application where users post on their feed, follow others, and interact with posts by liking and commenting. Allows user-uploaded images."
-				imageUrl="/images/bruhlog.png"
-				imageAlt="A comment section from one of my previous blog posts"
-				sourceUrl="https://github.com/Vaiterius/Miniblog-App"
-				// demoUrl="https://flask-bruhlog.herokuapp.com/global"
+				title="Smart-Textile Clothing App"
+				tools={["React Native", "JavaScript", "Swift", "Expo", "Firestore"]}
+				description="A mobile platform aimed at interfacing smart-clothing for collecting and analyzing health data for student athletes. Worked in an agile team as a backend iOS developer."
+				imageUrl="/images/smart-clothing-app.png"
+				imageAlt="An overview of the multiple screens built to track health data"
+				sourceUrl="https://github.com/CSU-Northridge-ARCS-Dev/smart-clothing-app"
 				demoUrl=""
 			/>
 			<ProjectItem
@@ -25,7 +24,7 @@ const ProjectSection = () => {
 			<ProjectItem
 				title="Music Mosaic Timeline"
 				tools={["React", "TypeScript", "TailwindCSS"]}
-				description="A mini web app that displays your top music albums as 4x4 collages throughout the months of the year with the Last.fm API. (Hint: type my username Vaiterius!)"
+				description="A mini web app that displays your top music albums as 4x4 collages throughout the months of the year with the Last.fm API. (Hint: type my username Vaiterius)"
 				imageUrl="/images/music-mosaic-timeline.png"
 				imageAlt="2022 timeline album images from my username"
 				sourceUrl="https://github.com/Vaiterius/Music-Mosaic-Timeline"
@@ -39,6 +38,16 @@ const ProjectSection = () => {
 				imageAlt="In-game screenshot of the player using their staff to target an enemy"
 				sourceUrl="https://github.com/Vaiterius/Traditional-Roguelike"
 				demoUrl="https://github.com/Vaiterius/Traditional-Roguelike?tab=readme-ov-file#run-me"
+			/>
+			<ProjectItem
+				title="Blogging Web App"
+				tools={["Python", "Flask", "PostgreSQL", "Heroku", "AWS"]}
+				description="A blogging social application where users post on their feed, follow others, and interact with posts by liking and commenting. Allows user-uploaded images."
+				imageUrl="/images/bruhlog.png"
+				imageAlt="A comment section from one of my previous blog posts"
+				sourceUrl="https://github.com/Vaiterius/Miniblog-App"
+				// demoUrl="https://flask-bruhlog.herokuapp.com/global"
+				demoUrl=""
 			/>
 			<ProjectItem
 				title="Monty Python Quotes API & bot"
