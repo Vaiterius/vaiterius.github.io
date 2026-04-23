@@ -6,11 +6,11 @@ const EducationSection = () => {
 		<div>
 			<EducationItem
 				name="California State University, Northridge"
-				dates="August 2022 - December 2024 (expected)"
+				dates="August 2022 - December 2024"
 				logoUrl="/logos/csun.png"
 				items={[
 					"Bachelor of Science, Computer Science",
-					"Web Designer at on-campus design agency, IntersectLA",
+					"Web Designer at design agency IntersectLA",
 					"Associate Software Developer at ARCS",
 					"General Officer at the Game Development Club",
 					"Clubs & Activities: Game Development Club, Software Developers Club, Punk Rock Club, Archery Recreational Team, Environmental Club",
