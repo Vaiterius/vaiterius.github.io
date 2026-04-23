@@ -13,6 +13,15 @@ const ProjectSection = () => {
 				demoUrl=""
 			/>
 			<ProjectItem
+				title="Cal State Northridge Websites"
+				tools={["Figma", "Drupal", "Wordpress"]}
+				description="A universty-wide redesign of webites for the departments and colleges in Web2, including the dept. of history, business law, marketing, etc."
+				imageUrl="/images/csun-artgal-homepage.png"
+				imageAlt="The homepage for the university's art galleries I helped design"
+				sourceUrl=""
+				demoUrl="https://www.csun.edu/mike-curb-arts-media-communication/art-galleries"
+			/>
+			<ProjectItem
 				title="Greatreads Book Review Platform"
 				tools={[".NET", "C#", "Angular", "TypeScript", "Playwright", "PostgreSQL", "AWS"]}
 				description="A book-reviewing platform for avid readers to search millions of Google book entries and write reviews on them."

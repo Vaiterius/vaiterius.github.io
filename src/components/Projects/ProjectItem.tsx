@@ -28,17 +28,21 @@ const ProjectItem = (props: {
 			</div>
 			<div className="card-actions justify-end p-4">
 				{props.demoUrl === "" ? (
-					<></>
+					<></> // There is no demo URL.
 				) : (
 					<Button className="btn" text="View Demo" url={props.demoUrl} newTab={true} />
 				)}
 
-				<Button
-					className="btn btn-outline"
-					text="GitHub"
-					url={props.sourceUrl}
-					newTab={true}
-				/>
+				{props.sourceUrl === "" ? (
+					<></> // There is no source URL.
+				) : (
+					<Button
+						className="btn btn-outline"
+						text="GitHub"
+						url={props.sourceUrl}
+						newTab={true}
+					/>
+				)}
 			</div>
 		</article>
 	);
