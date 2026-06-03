@@ -16,7 +16,7 @@ const Contact = () => {
 					</div>
 				</div>
 				<div className="flex flex-col md:mr-4">
-					<div className="text-sm font-bold text-primary">Academic</div>
+					{/* <div className="text-sm font-bold text-primary">Academic</div>
 					<div>
 						<a
 							href="mailto:gerard-euan.gandionco.767@my.csun.edu"
@@ -25,7 +25,7 @@ const Contact = () => {
 						>
 							gerard-euan.gandionco.767@my.csun.edu
 						</a>
-					</div>
+					</div> */}
 				</div>
 			</div>
 			{/* Social logos */}
