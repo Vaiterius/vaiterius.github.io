@@ -4,8 +4,8 @@ import Button from "../Button";
 const Timeline = () => {
 	return (
 		<ul className="timeline timeline-vertical timeline-snap-icon max-md:timeline-compact">
-			<TimelineItem
-				date="2025"
+			{/* <TimelineItem
+				date="2026"
 				position="Junior Software Engineer"
 				company="(Your Company Here)"
 				logoUrl=""
@@ -14,8 +14,7 @@ const Timeline = () => {
 						<p className="mb-3">
 							Currently seeking new grad, entry-level opportunities this year. I am
 							excited to immerse myself in real-world software development and make
-							meaningful contributions. Who will be the company that will get me on my
-							feet in the industry?
+							meaningful contributions.
 						</p>
 						<Button
 							url="#contact"
@@ -23,6 +22,24 @@ const Timeline = () => {
 							text="Hire me!"
 							newTab={false}
 						/>
+					</div>
+				}
+				onLeft={true}
+			/> */}
+			<TimelineItem
+				date="June 2026 - Present"
+				position="Web Developer"
+				company="Citrus Studios | Santa Monica"
+				logoUrl="/logos/citrus-logo.jpg"
+				content={
+					<div>
+						<p className="mb-3">
+							Developed and optimized websites for small businesses as part of a
+							large-scale Los Angeles County wildfire recovery initiative using
+							WordPress, Wix, and Squarespace. Leveraged Claude Code and Claude Design
+							to streamline development, reducing delivery time from 2–3 weeks to
+							under one week while delivering high-quality websites.
+						</p>
 					</div>
 				}
 				onLeft={false}
