@@ -11,7 +11,7 @@ const ProjectItem = (props: {
 	demoUrl: string;
 }) => {
 	return (
-		<article className="blurry card card-compact bg-neutral shadow-xl">
+		<article data-reveal="project" className="blurry card card-compact bg-neutral shadow-xl">
 			<figure>
 				<img src={props.imageUrl} alt={props.imageAlt} />
 			</figure>

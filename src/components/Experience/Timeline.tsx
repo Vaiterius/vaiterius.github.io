@@ -3,7 +3,7 @@ import Button from "../Button";
 
 const Timeline = () => {
 	return (
-		<ul className="timeline timeline-vertical timeline-snap-icon max-md:timeline-compact">
+		<ul data-reveal-group className="timeline timeline-vertical timeline-snap-icon max-md:timeline-compact">
 			{/* <TimelineItem
 				date="2026"
 				position="Junior Software Engineer"

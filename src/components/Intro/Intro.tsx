@@ -6,12 +6,12 @@ const Intro = () => {
 		<div className="w-full lg:w-8/12">
 			<div>
 				{/* <Fade> */}
-				<p className="text-primary">Hey, my name is...</p>
-				<h1 className="mb-2 text-6xl font-bold md:mb-0">Gerard Gandionco</h1>
+				<p data-hero="0" className="text-primary">Hey, my name is...</p>
+				<h1 data-hero="1" className="mb-2 text-6xl font-bold md:mb-0">Gerard Gandionco</h1>
 				{/* </Fade> */}
 			</div>
 			<HorizontalRule />
-			<p>
+			<p data-hero="2">
 				I'm an aspiring <span className="font-bold text-primary">full-stack developer</span>
 				, committed to merging solid technical skills across both{" "}
 				<span className="font-bold text-secondary">front-end</span> and{" "}
@@ -21,7 +21,7 @@ const Intro = () => {
 				creating interesting projects in my free time using an array of different
 				technologies.
 			</p>
-			<div className="my-4 space-x-4">
+			<div data-hero="3" className="my-4 space-x-4">
 				<Button
 					url="#contact"
 					className="btn btn-outline"

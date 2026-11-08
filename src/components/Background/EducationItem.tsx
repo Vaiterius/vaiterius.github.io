@@ -5,7 +5,7 @@ const EducationItem = (props: {
 	items: string[];
 }) => {
 	return (
-		<article className="blurry m-2 rounded-xl bg-base-100 p-4">
+		<article data-reveal="entry" className="blurry m-2 rounded-xl bg-base-100 p-4">
 			<div className="flex">
 				<img
 					className="ml-2 mr-2 h-14 w-14"
