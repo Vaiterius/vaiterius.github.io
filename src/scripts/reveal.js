@@ -10,7 +10,7 @@ if (
 				if (!isIntersecting) continue;
 				const group = target.closest("[data-reveal-group]") || target.parentElement;
 				const index = groups.get(group) || 0;
-				target.style.setProperty("--reveal-delay", `${Math.min(index * 100, 200)}ms`);
+				target.style.setProperty("--reveal-delay", `${Math.min(index * 90, 360)}ms`);
 				target.classList.remove("is-pending");
 				target.addEventListener(
 					"animationend",

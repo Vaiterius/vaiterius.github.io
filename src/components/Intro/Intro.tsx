@@ -10,18 +10,18 @@ const Intro = () => {
 				<h1 data-hero="1" className="mb-2 text-6xl font-bold md:mb-0">Gerard Gandionco</h1>
 				{/* </Fade> */}
 			</div>
-			<HorizontalRule />
-			<p data-hero="2">
-				I'm an aspiring <span className="font-bold text-primary">full-stack developer</span>
-				, committed to merging solid technical skills across both{" "}
-				<span className="font-bold text-secondary">front-end</span> and{" "}
-				<span className="font-bold text-secondary">back-end</span> technologies. Proficient
-				in <span className="font-bold text-accent">Python</span> and{" "}
-				<span className="font-bold text-accent">TypeScript</span>, I'm passionate about
-				creating interesting projects in my free time using an array of different
-				technologies.
+			<HorizontalRule heroStep="2" />
+			<p data-hero="3">
+				I'm a <span className="font-bold text-primary">full-stack developer</span> who
+				turns ideas and requirements into reliable, maintainable software. My experience
+				spans <span className="font-bold text-secondary">back-end systems</span> to{" "}
+				<span className="font-bold text-secondary">client-facing websites</span>, grounded
+				in core engineering practice: modular design, automated testing, code review and
+				clear documentation. I use modern tools, including{" "}
+				<span className="font-bold text-accent">AI</span>, to work faster, while keeping a
+				close eye on design and code quality.
 			</p>
-			<div data-hero="3" className="my-4 space-x-4">
+			<div data-hero="4" className="my-4 space-x-4">
 				<Button
 					url="#contact"
 					className="btn btn-outline"

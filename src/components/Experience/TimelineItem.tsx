@@ -12,7 +12,7 @@ const TimelineItem = (props: {
 	onLeft: boolean;
 }) => {
 	return (
-		<li>
+		<li data-reveal="entry">
 			<hr />
 			<div className="timeline-middle">
 				<svg
@@ -29,7 +29,6 @@ const TimelineItem = (props: {
 				</svg>
 			</div>
 			<div
-				data-reveal="entry"
 				className={props.onLeft ? "timeline-start mb-10 md:text-end" : "timeline-end mb-10"}
 			>
 				<time className={props.onLeft ? "mr-2 font-mono italic" : "ml-2 font-mono italic"}>

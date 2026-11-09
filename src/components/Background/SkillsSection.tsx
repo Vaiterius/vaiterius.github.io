@@ -6,12 +6,11 @@ const SkillsSection = () => {
 	return (
 		<div>
 			<SkillsSectionGroup
-				name="Languages/Databases"
+				name="Languages & Data"
 				skills={
 					<ul className="flex flex-wrap justify-center space-x-4 lg:justify-start">
 						<Skill name="Python" url="/logos/python.svg" />
 						<Skill name="TypeScript" url="/logos/typescript.svg" />
-						<Skill name="Java" url="/logos/java.svg" />
 						<Skill name="HTML/CSS" url="/logos/html.svg" />
 						<Skill name="C/C++" url="/logos/c.svg" />
 						<Skill name="PostgreSQL" url="/logos/postgresql.svg" />
@@ -20,30 +19,13 @@ const SkillsSection = () => {
 				}
 			/>
 			<SkillsSectionGroup
-				name="Frameworks/Libraries"
+				name="Frameworks"
 				skills={
 					<ul className="flex flex-wrap justify-center space-x-4 lg:justify-start">
-						<Skill name="Flask" url="/logos/flask.svg" lightBackground={true} />
-						<Skill name="Django" url="/logos/django.svg" />
-						<Skill name="React" url="/logos/react.svg" />
+						<Skill name="React Native" url="/logos/react.svg" />
+						<Skill name="Django REST Framework" url="/logos/django.svg" />
 						<Skill name="FastAPI" url="/logos/fastapi.svg" />
-						<Skill name="TailwindCSS" url="/logos/tailwindcss.svg" />
-						<Skill name="Bootstrap" url="/logos/bootstrap.svg" />
-					</ul>
-				}
-			/>
-			<SkillsSectionGroup
-				name="Platforms"
-				skills={
-					<ul className="flex flex-wrap justify-center space-x-4 lg:justify-start">
-						<Skill name="Heroku" url="/logos/heroku.svg" />
-						<Skill name="Fly.io" url="/logos/fly.io.svg" />
-						<Skill name="Expo" url="/logos/expo.svg" lightBackground={true} />
-						<Skill name="Netlify" url="/logos/netlify.svg" />
-						<Skill name="AWS" url="/logos/aws.svg" lightBackground={true} />
-						<Skill name="Google Cloud" url="/logos/google-cloud.svg" />
-						<Skill name="Drupal" url="/logos/drupal.svg" />
-						<Skill name="WordPress" url="/logos/wordpress.svg" />
+						<Skill name="Tailwind CSS" url="/logos/tailwindcss.svg" />
 					</ul>
 				}
 			/>
@@ -52,10 +34,24 @@ const SkillsSection = () => {
 				skills={
 					<ul className="flex flex-wrap justify-center space-x-4 lg:justify-start">
 						<Skill name="Git" url="/logos/git.svg" />
+						<Skill name="VS Code" url="/logos/vscode.svg" />
 						<Skill name="Docker" url="/logos/docker.svg" />
+						<Skill name="Sentry" url="/logos/sentry.svg" lightBackground={true} />
 						<Skill name="Jest" url="/logos/jest.svg" />
-						<Skill name="VSCode" url="/logos/vscode.svg" />
 						<Skill name="Figma" url="/logos/figma.svg" />
+					</ul>
+				}
+			/>
+			<SkillsSectionGroup
+				name="Platforms & AI"
+				skills={
+					<ul className="flex flex-wrap justify-center space-x-4 lg:justify-start">
+						<Skill name="AWS" url="/logos/aws.svg" lightBackground={true} />
+						<Skill name="Netlify" url="/logos/netlify.svg" />
+						<Skill name="Expo" url="/logos/expo.svg" lightBackground={true} />
+						<Skill name="WordPress" url="/logos/wordpress.svg" />
+						<Skill name="Claude Code" url="/logos/claude.svg" />
+						<Skill name="Codex" url="/logos/codex.svg" />
 					</ul>
 				}
 			/>

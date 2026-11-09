@@ -27,6 +27,22 @@ const Timeline = () => {
 				onLeft={true}
 			/> */}
 			<TimelineItem
+				date="September 2026 - Present"
+				position="Software Engineer"
+				company="Grain | Los Angeles"
+				logoUrl="/logos/grain-logo.png"
+				content={
+					<p className="ml-0 list-none md:ml-2 md:list-disc">
+						Grain is a startup building an indie streaming platform. I work across its web
+						and mobile apps, backend services, and cloud infrastructure, developing features
+						for both viewers and filmmakers. My role spans shaping the user experience,
+						connecting the systems behind it, and helping move the product from early
+						concepts toward launch.
+					</p>
+				}
+				onLeft={true}
+			/>
+			<TimelineItem
 				date="June 2026 - Present"
 				position="Web Developer"
 				company="Citrus Studios | Santa Monica"

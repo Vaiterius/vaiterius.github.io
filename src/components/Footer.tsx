@@ -1,7 +1,7 @@
 const Footer = (props: { year: number }) => {
 	return (
 		<footer className="footer footer-center bg-base-300">
-			<aside>
+			<aside data-reveal="entry">
 				<p className="my-12">
 					&copy; {props.year} Gerard Gandionco - Made with{" "}
 					<a
