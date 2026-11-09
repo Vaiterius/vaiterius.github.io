@@ -10,7 +10,7 @@ if (
 				if (!isIntersecting) continue;
 				const group = target.closest("[data-reveal-group]") || target.parentElement;
 				const index = groups.get(group) || 0;
-				target.style.setProperty("--reveal-delay", `${Math.min(index * 120, 360)}ms`);
+				target.style.setProperty("--reveal-delay", `${Math.min(index * 100, 200)}ms`);
 				target.classList.remove("is-pending");
 				target.addEventListener(
 					"animationend",
@@ -22,11 +22,11 @@ if (
 				observer.unobserve(target);
 			}
 		},
-		{ threshold: 0, rootMargin: "0px 0px -32px 0px" },
+		{ threshold: 0, rootMargin: "0px 0px -100px 0px" },
 	);
 
 	document.querySelectorAll("[data-reveal]").forEach((element) => {
-		// Do not hide content already painted in view (including restored scroll positions).
+		// Avoid shifting content already in view, including restored scroll positions.
 		if (element.getBoundingClientRect().top < window.innerHeight) return;
 		observer.observe(element);
 		element.classList.add("is-pending");
